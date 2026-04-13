@@ -118,3 +118,9 @@
   --z-modal-backdrop: 400;
   --z-modal: 500;
 }
+
+@media (max-width: 768px) {
+  :root {
+    --space-20: 4.5rem;     /* 80px */
+  }
+}

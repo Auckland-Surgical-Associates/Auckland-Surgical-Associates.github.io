@@ -1325,12 +1325,12 @@
 
 .enquire-form__row {
   display: grid;
-  gap: var(--space-4);
 }
 
 @media (min-width: 640px) {
   .enquire-form__row {
     grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
   }
 }
 
