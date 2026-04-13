@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="section">
+  <div class="container container--narrow">
+    <header class="mb-8">
+      <h1>{{ .Title }}</h1>
+      {{- with .Description }}
+      <p class="lead">{{ . }}</p>
+      {{- end }}
+    </header>
+
+    <div class="content">
+      {{ .Content }}
+    </div>
+
+    {{/* Back link */}}
+    <div class="mt-8">
+      {{- with .Parent }}
+      <a href="{{ .Permalink }}" class="btn btn--secondary">&larr; Back to {{ .Title }}</a>
+      {{- end }}
+    </div>
+  </div>
+</article>
+{{ end }}

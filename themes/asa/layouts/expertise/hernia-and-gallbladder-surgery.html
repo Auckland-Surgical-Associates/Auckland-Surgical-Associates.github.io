@@ -1,0 +1,274 @@
+{{ define "main" }}
+
+{{/* ===== 1. HERO ===== */}}
+{{ partial "page-hero.html" . }}
+
+{{/* ===== 2. CONDITIONS TREATED ===== */}}
+<section class="section">
+  <div class="container">
+    <h2 class="section-header__title">Conditions we treat</h2>
+    <p class="section-header__subtitle">Our surgeons have extensive experience managing a wide range of hernia and gallbladder conditions, including:</p>
+    <div class="conditions-grid">
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          {{/* Gallbladder with stones */}}
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2c-1.5 0-3 1-3.5 3C4.5 8 3 10 3 13c0 4 3 7 7 8h4c4-1 7-4 7-8 0-3-1.5-5-2.5-8C18 3 16.5 2 15 2z"/><circle cx="10" cy="12" r="1.5"/><circle cx="14.5" cy="10.5" r="1"/><circle cx="12" cy="15" r="1"/></svg>
+        </div>
+        <h3>Gallstones</h3>
+        <p>Gallstones are hardened deposits that form in the gallbladder. They can cause sudden, severe abdominal pain (biliary colic), inflammation, or infection. Removal of the gallbladder is the most effective treatment.</p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/></svg>
+        </div>
+        <h3>Inguinal Hernia</h3>
+        <p>A bulge in the groin area where abdominal contents push through a weakness in the lower abdominal wall. More common in men. Can cause discomfort and carries a risk of complications if left untreated.</p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+        </div>
+        <h3>Umbilical and Ventral Hernia</h3>
+        <p>A bulge near the belly button or along the front of the abdomen, often at the site of a previous surgical incision. Can increase in size over time and may become painful.</p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18"/><path d="M3 12h18"/><path d="M3 17h18"/><path d="M8 3v18"/></svg>
+        </div>
+        <h3>Incisional Hernia</h3>
+        <p>A hernia that develops at the site of a previous surgical wound. Can occur months or years after the original surgery and often requires specialist repair techniques.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 3. PROCEDURES ===== */}}
+<section class="section section--white expertise-solutions">
+  <div class="container">
+    <h2 class="section-header__title">Our Surgical Procedures</h2>
+    <p class="section-header__subtitle">We offer the full range of hernia and gallbladder procedures, from minimally invasive keyhole surgery to complex abdominal wall reconstruction. The best approach is tailored to each patient during consultation.</p>
+
+    <div class="solutions-grid">
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Laparoscopic Cholecystectomy</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>Keyhole removal of the gallbladder &mdash; one of the most commonly performed surgical procedures. The gallbladder is removed through small incisions, allowing rapid recovery and minimal scarring.</p>
+          <ul>
+            <li>Usually performed as a day-case procedure</li>
+            <li>3&ndash;4 small incisions (keyhole surgery)</li>
+            <li>Most patients return to normal activities within 1&ndash;2 weeks</li>
+            <li>Definitive treatment for gallstones and related complications</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Laparoscopic Inguinal Hernia Repair (TEP/TAPP)</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>Minimally invasive repair of groin hernias using a synthetic mesh to reinforce the abdominal wall. Offers less post-operative pain and faster return to activity compared to open repair.</p>
+          <ul>
+            <li>TEP (Totally Extraperitoneal) or TAPP (Transabdominal Preperitoneal) approach</li>
+            <li>Mesh reinforcement for durable repair</li>
+            <li>Usually a day-case or overnight procedure</li>
+            <li>Faster return to work and exercise than open repair</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Open Hernia Repair</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>Traditional open approach for hernia repair, which may be preferred in certain situations. Performed under local, regional, or general anaesthetic depending on the case.</p>
+          <ul>
+            <li>Well-established technique with excellent outcomes</li>
+            <li>May be preferred for small or first-time inguinal hernias</li>
+            <li>Can be performed under local anaesthetic in selected cases</li>
+            <li>Single incision directly over the hernia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Complex Abdominal Wall Reconstruction</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>Specialist repair of large or recurrent hernias that require advanced surgical techniques. May involve component separation, mesh placement, and reconstruction of the abdominal wall.</p>
+          <ul>
+            <li>For large, complex, or recurrent hernias</li>
+            <li>Component separation and mesh reinforcement techniques</li>
+            <li>Laparoscopic or open approach depending on complexity</li>
+            <li>Requires specialist expertise in abdominal wall surgery</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{/* ===== 4. WHAT TO EXPECT ===== */}}
+<section class="section expertise-expect">
+  <div class="container">
+    <div class="grid grid--2-wide">
+      <div class="about-image">
+        <img src="{{ "images/expertise/hernia-gallbladder.jpg" | relURL }}" alt="Patient consultation at Auckland Surgical Associates" class="about-image__img" loading="lazy">
+      </div>
+      <div>
+        <h2>What to expect</h2>
+
+        <h3 class="expertise-expect__step-title">
+          <span class="expertise-expect__dot"></span>
+          During your consultation
+        </h3>
+        <p>Your surgeon will examine you, review any imaging, and discuss the best approach for your condition. Many hernia and gallbladder procedures are straightforward and can be planned quickly.</p>
+
+        <h3 class="expertise-expect__step-title">
+          <span class="expertise-expect__dot"></span>
+          Your procedure
+        </h3>
+        <p>Most gallbladder and hernia operations are performed laparoscopically as day-case or overnight procedures. Your surgeon will explain the specific approach, anaesthetic, and expected recovery time.</p>
+
+        <h3 class="expertise-expect__step-title">
+          <span class="expertise-expect__dot"></span>
+          Recovery
+        </h3>
+        <p>Gallbladder patients typically return to normal activities within 1&ndash;2 weeks. Hernia repair recovery varies from 1&ndash;4 weeks depending on the type and complexity of the repair. You will receive clear post-operative instructions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 5. CTA ===== */}}
+<section class="section expertise-cta-section">
+  <div class="container">
+    <div class="expertise-cta">
+      <div class="expertise-cta__content">
+        <h2>Get expert advice for your hernia or gallbladder problem</h2>
+        <p>Whether you need a straightforward gallbladder removal or a complex hernia repair, our experienced surgeons are here to help. Contact us to arrange a consultation.</p>
+        <a href="#footer" class="btn btn--accent btn--icon">
+          Contact us
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 6. FAQs ===== */}}
+<section class="section section--white" id="faqs">
+  <div class="container">
+    <div class="grid grid--2-wide">
+      <div>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="expertise-accordion">
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Do I need my gallbladder removed?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>If you have symptomatic gallstones causing pain, inflammation, or other complications, removal of the gallbladder is usually recommended. You can live a normal, healthy life without a gallbladder.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>When should  the gallbladder be removed?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>If you have symptomatic gallstones causing pain, inflammation, or other complications, removal of the gallbladder is usually recommended. You can live a normal, healthy life without a gallbladder.</p>
+            <ul>
+              <li>Symptomatic gallstones</li>
+              <li>Recurrent pain in the right side/ upper abdominal pain</li>
+              <li>Complications of stones like inflammation of your gallbladder or pancreas</li>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Is gallbladder surgery safe?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Laparoscopic cholecystectomy is a safe and routine procedure with low complication rates when performed by experienced Upper Gastrointestinal surgeons.</p>
+          </div>
+        </details>
+        
+        {{/*  Hernia  */}}
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>What is the best type of hernia repair?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Most hernias are repaired using mesh via laparoscopic/robotic or open techniques. The best appraoch depends on hernia type and patient factors.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Should all hernias be repaired?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Not all, but hernias that are symptomatic and getting bigger should be repaired to prevent complications like blokages or intestinal ischaemia.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>How long will I be off work after hernia surgery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>This depends on the type of hernia repair and your occupation. For laparoscopic inguinal hernia repair, most patients return to desk work within a week and physical work within 2&ndash;4 weeks.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Will I need a mesh for hernia repair?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Mesh is used in most hernia repairs as it provides a stronger, more durable repair and reduces the risk of recurrence. Your surgeon will discuss the specific approach for your hernia.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Can a hernia come back after repair?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>While recurrence rates are low with modern techniques and mesh, it is possible. Factors such as smoking, <a href="{{ "expertise/obesity-treatment/" | relURL }}">obesity</a>, and heavy lifting can increase the risk. Your surgeon will advise on minimising recurrence risk.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Is hernia surgery urgent?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Most hernias can be repaired on a planned (elective) basis. However, if a hernia becomes suddenly painful, swollen, or you cannot push it back in, seek medical attention urgently as this may indicate a strangulated hernia requiring emergency surgery.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

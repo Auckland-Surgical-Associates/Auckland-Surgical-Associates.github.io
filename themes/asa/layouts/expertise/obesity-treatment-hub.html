@@ -1,0 +1,194 @@
+{{ define "main" }}
+
+{{/* ===== 1. HERO ===== */}}
+{{ partial "page-hero.html" . }}
+
+{{/* ===== 2. CONDITIONS TREATED ===== */}}
+<section class="section">
+  <div class="container">
+    <h2 class="section-header__title">Conditions that benefit from weight loss treatment</h2>
+    <p class="section-header__subtitle">Both medical and surgical approaches can be effective for patients living with:</p>
+    <div class="conditions-grid">
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          {{/* Blood drop icon — diabetes */}}
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/><path d="M9 13h6"/><path d="M12 10v6"/></svg>
+        </div>
+        <h3>Type 2 Diabetes</h3>
+        <p>Weight loss can lead to significant improvement or complete resolution of Type 2 diabetes, often reducing or eliminating the need for medication.</p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Obstructive Sleep Apnoea</h3>
+        <p>Weight loss significantly reduces the severity of sleep apnoea, with many patients no longer requiring CPAP therapy.</p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+        </div>
+        <h3>Metabolic Syndrome</h3>
+        <p>A cluster of conditions including high blood pressure, elevated blood sugar, and abnormal cholesterol levels that increase cardiovascular risk.</p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          {{/* Person with pain/mood — figure with cloud */}}
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="4" r="2.5"/><path d="M9 8c-2.5 0-4 2-4 4.5V16h2l1 6h2l1-6h2v-3.5C13 10 11.5 8 9 8z"/><path d="M17 4a3 3 0 0 1 3 3c0 1.5-1 2.5-1 2.5h-4s-1-1-1-2.5a3 3 0 0 1 3-3z"/></svg>
+        </div>
+        <h3>Musculoskeletal Pain &amp; Depression</h3>
+        <p>Significant weight loss reduces joint stress and has been shown to improve anxiety, depression, and overall quality of life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{/* ===== 3. TWO PATHWAYS ===== */}}
+<section class="section section--white">
+  <div class="container">
+    <h2 class="section-header__title">Your Weight Loss Options</h2>
+    <p class="section-header__subtitle">We offer two complementary approaches to obesity treatment. Many patients benefit from a combination of both.</p>
+
+    <div class="pathway-grid">
+
+      <div class="pathway-card--medical">
+        <div class="pathway-card__header pathway-card__header--medical">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/>
+            <path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/>
+          </svg>
+          <h3>Medical Weight Loss</h3>
+        </div>
+        <div class="pathway-card__body--medical">
+          <p>Non-surgical, medication-based approaches combined with dietitian and psychology support. Suitable for patients who prefer to avoid surgery or who may not yet qualify for a surgical procedure.</p>
+
+          <ul>
+            <li>Non-invasive - no surgery or recovery time</li>
+            <li>Reversible - can stop treatment at any time</li>
+            <li>Lower upfront cost</li>
+            <li>Suitable for patients with lower BMI (27.5+)</li>
+            <li>Can be combined with surgical approaches</li>
+          </ul>
+
+          {{/*  <h4>Treatment options include:</h4>
+          <ul>
+            <li>Wegovy (Semaglutide) - weekly injection</li>
+            <li>Mounjaro (Tirzepatide) - weekly injection</li>
+            <li>Contrave (Naltrexone/Bupropion) - oral tablet</li>
+            <li>Very Low Calorie Diet (VLCD) programmes</li>
+            <li>Dietitian and psychology support</li>
+          </ul>  */}}
+
+          {{/*  <div class="pathway-card__pros-cons">
+            <div class="pathway-card__pros">
+              <h4>Advantages</h4>
+              <ul>
+                <li>Non-invasive - no surgery or recovery time</li>
+                <li>Reversible - can stop treatment at any time</li>
+                <li>Lower upfront cost</li>
+                <li>Suitable for patients with lower BMI (27.5+)</li>
+                <li>Can be combined with surgical approaches</li>
+              </ul>
+            </div>
+            <div class="pathway-card__cons">
+              <h4>Considerations</h4>
+              <ul>
+                <li>Ongoing medication costs (non-funded)</li>
+                <li>Gradual results over months</li>
+                <li>Typically lower total weight loss than surgery</li>
+                <li>May require continued medication to maintain results</li>
+              </ul>
+            </div>
+          </div>*/}}
+        </div>  
+        <div class="pathway-card__footer">
+          <a href="{{ "expertise/obesity-treatment/medical-weight-loss/" | relURL }}" class="btn btn--accent btn--icon">
+            Explore medical options
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="pathway-card--surgical">
+        <div class="pathway-card__header pathway-card__header--surgical">
+          
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 8v4l2 2"/>
+          </svg>
+          <h3>Surgical Weight Loss</h3>
+        </div>
+        <div class="pathway-card__body--surgical">
+          <p>Laparoscopic (keyhole) bariatric procedures performed by our experienced surgeons. Supported by a dedicated multidisciplinary team including dietitian, psychologist, and clinical nurse specialist.</p>
+
+          {{/*  <h4>Procedures available:</h4>
+          <ul>
+            <li>Fobi Pouch Gastric Bypass (Roux-en-Y)</li>
+            <li>Gastric Sleeve</li>
+            <li>Mini Gastric Bypass</li>
+            <li>Gastric Band</li>
+            <li>SADI-S and BPD/DS</li>
+          </ul>  */}}
+
+          <ul>
+            <li>Significant, sustained weight loss (50-70% excess weight)</li>
+            <li>Strong improvement in metabolic conditions</li>
+            <li>Proven long-term outcomes backed by decades of research</li>
+            <li>One-time procedure with lifelong support</li>
+            <li>Laparoscopic( keyhole) or robotic approaches</li>
+          </ul>
+          
+          {{/*  <div class="pathway-card__pros-cons">
+            <div class="pathway-card__pros">
+              <h4>Advantages</h4>
+              <ul>
+                <li>Significant, sustained weight loss (50-70% excess weight)</li>
+                <li>Strong improvement in metabolic conditions</li>
+                <li>Proven long-term outcomes backed by decades of research</li>
+                <li>One-time procedure with lifelong support</li>
+                <li>Southern Cross affiliated provider</li>
+              </ul>
+            </div>
+            <div class="pathway-card__cons">
+              <h4>Considerations</h4>
+              <ul>
+                <li>Surgical risks (minimised by laparoscopic technique)</li>
+                <li>Recovery period of 2-4 weeks</li>
+                <li>Lifelong vitamin and mineral supplementation required</li>
+                <li>Most procedures are irreversible</li>
+                <li>Higher upfront cost</li>
+              </ul>
+            </div>
+          </div> */}}
+        </div> 
+        <div class="pathway-card__footer">
+          <a href="{{ "expertise/obesity-treatment/surgical-weight-loss/" | relURL }}" class="btn btn--accent btn--icon">
+            Explore surgical options
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{/* ===== 4. NOT SURE? ===== */}}
+<section class="section expertise-cta-section">
+  <div class="container">
+    <div class="expertise-cta">
+      <div class="expertise-cta__content">
+        <h2>Not sure which option is right for you?</h2>
+        <p>Every person is different. Book a consultation and our team will help you understand which approach &mdash; medical, surgical, or a combination of both &mdash; is best suited to your circumstances and goals.</p>
+        <a href="#footer" class="btn btn--accent btn--icon">
+          Contact us
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,19 @@
+{{- with .Site.Params.notice -}}
+{{- if .enabled -}}
+<div class="notice" role="alert">
+  <div class="container">
+    <div class="notice__content">
+      <svg class="notice__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+      <div>
+        <p class="notice__title">{{ .title }}</p>
+        <p class="notice__text">{{ .message }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{- end -}}
+{{- end -}}

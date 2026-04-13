@@ -1,0 +1,80 @@
+{{ define "main" }}
+{{ partial "page-hero.html" . }}
+
+<section class="section faq-page">
+  <div class="container">
+    <div class="faq-content" id="faq-content">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+<script>
+// Progressive enhancement: convert H3 + answer paragraphs into accordion items
+(function() {
+  var container = document.getElementById('faq-content');
+  if (!container) return;
+
+  var children = Array.from(container.children);
+  var frag = document.createDocumentFragment();
+  var currentCategory = null;
+  var currentItems = null;
+
+  function flushCategory() {
+    if (currentCategory && currentItems) {
+      frag.appendChild(currentCategory);
+      var itemsDiv = document.createElement('div');
+      itemsDiv.className = 'faq-category__items';
+      while (currentItems.length) {
+        itemsDiv.appendChild(currentItems.shift());
+      }
+      currentCategory.appendChild(itemsDiv);
+    }
+  }
+
+  for (var i = 0; i < children.length; i++) {
+    var el = children[i];
+
+    if (el.tagName === 'H2') {
+      flushCategory();
+      currentCategory = document.createElement('div');
+      currentCategory.className = 'faq-category';
+      var title = document.createElement('h2');
+      title.className = 'faq-category__title';
+      title.textContent = el.textContent;
+      currentCategory.appendChild(title);
+      currentItems = [];
+    } else if (el.tagName === 'H3') {
+      // Collect all siblings until next H3 or H2
+      var details = document.createElement('details');
+      details.className = 'faq-item';
+      var summary = document.createElement('summary');
+      summary.className = 'faq-item__question';
+      summary.innerHTML = '<span>' + el.textContent + '</span>' +
+        '<svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+        '<polyline points="6 9 12 15 18 9"></polyline></svg>';
+      details.appendChild(summary);
+
+      var answer = document.createElement('div');
+      answer.className = 'faq-item__answer';
+
+      // Grab following paragraphs until next heading
+      while (i + 1 < children.length && children[i + 1].tagName !== 'H2' && children[i + 1].tagName !== 'H3') {
+        i++;
+        answer.appendChild(children[i].cloneNode(true));
+      }
+
+      details.appendChild(answer);
+      if (currentItems) {
+        currentItems.push(details);
+      }
+    }
+  }
+
+  flushCategory();
+
+  container.innerHTML = '';
+  container.appendChild(frag);
+})();
+</script>
+{{ end }}

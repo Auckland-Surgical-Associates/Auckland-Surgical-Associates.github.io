@@ -1,0 +1,89 @@
+# baseURL = 'https://aucklandsurgicalassociates.co.nz/'
+baseURL = 'http://localhost'
+languageCode = 'en-nz'
+title = 'Auckland Surgical Associates'
+theme = 'asa'
+
+[params]
+  description = 'General Surgery Experts | Comprehensive Care'
+  tagline = 'Our aim is to give all of our patients a personal, warm, caring and safe journey.'
+  phone = '09 200 4849'
+  email = 'info@aklsurgical.co.nz'
+  address = 'Lakeside Specialists, 17 Shea Terrace, Takapuna, Auckland'
+  hours = 'Monday - Friday: 8am - 5pm.'
+  weekend = 'Weekend appointments and after hour appointments available.'
+
+[params.notice]
+  enabled = false
+  title = 'Holiday Notice'
+  message = 'We are closed for Xmas and New Year and would like to wish all our patients and colleagues a safe and happy holiday. In emergency, Mr Suheelan Kulasegaran can be contacted on 021 289 0715 or please ring 111 or go to your nearest A&E department. The office will re open on January 8th 2026.'
+
+[params.about]
+  lead = 'Auckland Surgical Associates is the Practice of Michael Booth and his Associates.'
+  description = 'Michael Booth is an Upper Gastrointestinal, Bariatric and General Laparoscopic Surgeon who was previously Clinical Director at the Waitemata Specialist Centre.'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[menu]
+  [[menu.main]]
+    identifier = 'expertise'
+    name = 'Expertise'
+    url = '/expertise/'
+    weight = 1
+  [[menu.main]]
+    name = 'Obesity Treatment'
+    url = '/expertise/obesity-treatment/'
+    parent = 'expertise'
+    weight = 1
+    [menu.main.params]
+      icon = 'bariatric'
+  [[menu.main]]
+    name = 'Upper Gastrointestinal Surgery'
+    url = '/expertise/upper-gi-surgery/'
+    parent = 'expertise'
+    weight = 2
+    [menu.main.params]
+      icon = 'antireflux'
+  [[menu.main]]
+    name = 'Cancer Surgery'
+    url = '/expertise/cancer-surgery/'
+    parent = 'expertise'
+    weight = 3
+    [menu.main.params]
+      icon = 'cancer'
+  [[menu.main]]
+    name = 'Hernia and Gallbladder surgery'
+    url = '/expertise/hernia-and-gallbladder-surgery/'
+    parent = 'expertise'
+    weight = 4
+    [menu.main.params]
+      icon = 'hernia'
+  [[menu.main]]
+    name = 'Robotic surgery'
+    url = '/expertise/robotic-surgery/'
+    parent = 'expertise'
+    weight = 5
+    [menu.main.params]
+      icon = 'robotic'
+  [[menu.main]]
+    name = 'Endoscopy'
+    url = '/expertise/endoscopy/'
+    parent = 'expertise'
+    weight = 6
+    [menu.main.params]
+      icon = 'endoscopy'
+  [[menu.main]]
+    name = 'Symptoms'
+    url = '/symptoms/'
+    weight = 2
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 3
+  [[menu.main]]
+    name = 'FAQs'
+    url = '/faq/'
+    weight = 4

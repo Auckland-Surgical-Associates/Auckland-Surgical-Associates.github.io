@@ -1,0 +1,268 @@
+{{ define "main" }}
+
+{{/* ===== 1. HERO ===== */}}
+{{ partial "page-hero.html" . }}
+
+{{/* ===== 2. APPLICATIONS ===== */}}
+<section class="section">
+  <div class="container">
+    <h2 class="section-header__title">Applications of robotic surgery</h2>
+    <p class="section-header__subtitle">The da Vinci robotic platform is used across a range of upper gastrointestinal, cancer, bariatric, and general surgical procedures.</p>
+    <div class="conditions-grid">
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2.4L6.3 2.4C6.3 2.4 4.4 8.4 9.7 9.5 9.3 11.6 6.3 12.9 6.3 15C4 15.1 1 14.5 1.2 21.2 3.4 21.4 3.7 21.2 3.7 21.2 3.7 21.2 2.8 17.3 5.6 17.6 6.5 18.6 8.5 22.7 15.8 17.6 23 12.6 20.9 8.4 19.8 6.8 18.8 5.3 15.1 1.3 10.6 6.8 7.7 5.9 9 2.4 9 2.4Z"/></svg>
+        </div>
+        <h3>Upper Gastrointestinal Surgery</h3>
+        <p>Robotic-assisted anti-reflux surgery, hiatus hernia repair, and Heller myotomy for achalasia. The robotic platform provides enhanced visualisation and dexterity for complex upper gastrointestinal procedures.</p>
+        <p class="text-center pt-8">
+          <a href="{{ "expertise/upper-gi-surgery/" | relURL }}" class="btn">Learn more
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg></a>
+        </p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-1.5 2-4 5-4 8a4 4 0 0 0 4 4 4 4 0 0 0 4-4c0-3-2.5-6-4-8z"/><path d="M12 14v8"/><path d="M9 18h6"/></svg>
+        </div>
+        <h3>Cancer Surgery</h3>
+        <p>Robotic oesophagectomy and gastrectomy for oesophageal and gastric cancers. Mr Kulasegaran performed New Zealand's first robotic procedures in this field.</p>
+        <p class="text-center pt-8">
+          <a href="{{ "expertise/cancer-surgery/" | relURL }}" class="btn">Learn more
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg></a>
+        </p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 11.7L1 11.7M4.5 11.7L3.1 10.3M3.1 13.3L4.5 11.8"/><path d="M4.6 6C4.6 6 8.2 10.8 5.1 17.5"/><path d="M19.4 6C19.4 6 15.5 11.1 19.4 18"/><path d="M19.4 11.7L23 11.7M19.5 11.7L20.9 10.3M20.9 13.3L19.5 11.8"/><path d="M12.2 13.8v.5"/></svg>
+        </div>
+        <h3>Bariatric Surgery</h3>
+        <p>Robotic-assisted weight loss procedures including gastric bypass. The precision of robotic instruments can benefit complex or revisional bariatric cases.</p>
+        <p class="text-center pt-8">
+          <a href="{{ "expertise/obesity-treatment/surgical-weight-loss/" | relURL }}" class="btn">Learn more
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg></a>
+        </p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>General Surgery</h3>
+        <p>Selected general surgical procedures including complex hernia repair and abdominal wall reconstruction where the robotic platform offers advantages over conventional laparoscopy.</p>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 3. BENEFITS OF ROBOTIC SURGERY ===== */}}
+<section class="section section--white expertise-solutions">
+  <div class="container">
+    <h2 class="section-header__title">Benefits of robotic surgery</h2>
+    <p class="section-header__subtitle">The da Vinci robotic surgical system combines advanced 3D visualisation with instruments of exceptional precision to enhance surgical outcomes.</p>
+
+    <div class="solutions-grid">
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Enhanced Precision</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>The da Vinci robotic system provides 3D high-definition visualisation with up to 10x magnification, combined with instruments that move with greater precision than the human hand.</p>
+          <ul>
+            <li>3D high-definition camera with magnification</li>
+            <li>Wristed instruments with 7 degrees of freedom</li>
+            <li>Tremor filtration for ultra-precise movements</li>
+            <li>Superior visualisation of anatomical structures</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Smaller Incisions</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>Robotic surgery is performed through small keyhole incisions, similar to standard laparoscopic surgery. This typically results in less pain, reduced scarring, and faster recovery.</p>
+          <ul>
+            <li>Typically 4&ndash;6 small incisions (8&ndash;12mm)</li>
+            <li>Reduced post-operative pain</li>
+            <li>Minimal scarring</li>
+            <li>Lower risk of wound complications</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Faster Recovery</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>Patients undergoing robotic surgery often experience shorter hospital stays and a quicker return to normal activities compared to traditional open surgery.</p>
+          <ul>
+            <li>Shorter hospital stays</li>
+            <li>Earlier return to normal activities</li>
+            <li>Reduced blood loss during surgery</li>
+            <li>Lower rates of post-operative complications</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Complex Cases</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>The robotic platform is particularly valuable for complex surgical cases, including revisional surgery and procedures in confined spaces where conventional instruments have limitations.</p>
+          <ul>
+            <li>Ideal for confined surgical spaces</li>
+            <li>Enables complex reconstructive procedures</li>
+            <li>Valuable for revisional and redo surgery</li>
+            <li>Allows procedures that may not be feasible laparoscopically</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{/* ===== 4. WHAT TO EXPECT ===== */}}
+<section class="section expertise-expect">
+  <div class="container">
+    <div class="grid grid--2-wide">
+      <div class="about-image">
+        <img src="{{ "images/expertise/robotic-surgery.jpg" | relURL }}" alt="Patient consultation at Auckland Surgical Associates" class="about-image__img" loading="lazy">
+      </div>
+      <div>
+        <h2>What to expect</h2>
+
+        <h3 class="expertise-expect__step-title">
+          <span class="expertise-expect__dot"></span>
+          During your consultation
+        </h3>
+        <p>Your surgeon will assess whether robotic surgery is appropriate for your procedure. Not every operation requires a robotic approach &mdash; your surgeon will recommend it when it offers a genuine advantage for your specific case.</p>
+
+        <h3 class="expertise-expect__step-title">
+          <span class="expertise-expect__dot"></span>
+          The procedure
+        </h3>
+        <p>Robotic surgery is performed under general anaesthetic. Your surgeon sits at a console near the operating table, controlling the robotic instruments with hand and foot controls. The surgical team is beside you throughout.</p>
+
+        <h3 class="expertise-expect__step-title">
+          <span class="expertise-expect__dot"></span>
+          Recovery
+        </h3>
+        <p>Recovery after robotic surgery is typically similar to or faster than standard laparoscopic surgery. Most patients experience less pain and can return to normal activities sooner than with open surgery. Your surgeon will provide specific guidance for your procedure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 5. CTA ===== */}}
+<section class="section expertise-cta-section">
+  <div class="container">
+    <div class="expertise-cta">
+      <div class="expertise-cta__content">
+        <h2>Find out if robotic surgery is right for you</h2>
+        <p>Not every procedure requires a robotic approach, but when it does, you want a surgeon with proven experience. Contact us to discuss whether robotic surgery may benefit your case.</p>
+        <a href="#footer" class="btn btn--accent btn--icon">
+          Contact us
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 6. FAQs ===== */}}
+<section class="section section--white" id="faqs">
+  <div class="container">
+    <div class="grid grid--2-wide">
+      <div>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="expertise-accordion">
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>What is Robotic surgery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Robotic surgery is an adnvaced minimally invasive techniques that allows greater precision and a greater view.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Who should be performing robotic surgery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Robotic surgery is a tool. However, it should be performed by someone who is highly trained and with proven patient outcomes. Mr Suheelan Kulasegaran has performed the first total robotic oesophagectomy, hiatal hernia and gastrectomy in New Zealand. He has proven patient outcomes and satisfaction.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Is robotic surgery safer than traditional surgery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Robotic surgery offers advantages in precision and visualisation that can benefit certain procedures. Safety depends on many factors including the surgeon's experience. Mr Kulasegaran has extensive robotic surgical experience and will recommend the approach that is safest and most effective for your situation.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Does the robot perform the surgery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>No. The surgeon controls every movement of the robotic instruments. The da Vinci system is a tool that enhances the surgeon's capabilities &mdash; it does not make autonomous decisions or movements.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>What procedures can be done robotically?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>At our practice, robotic surgery is used for <a href="{{ "expertise/upper-gi-surgery/" | relURL }}">upper gastrointestinal procedures</a> (anti-reflux, hiatus hernia), <a href="{{ "expertise/cancer-surgery/" | relURL }}">cancer operations</a> (oesophagectomy, gastrectomy), selected <a href="{{ "expertise/obesity-treatment/surgical-weight-loss/" | relURL }}">bariatric procedures</a>, and complex general surgical cases.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Will robotic surgery cost more?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Robotic surgery may involve additional costs compared to standard laparoscopic surgery due to the specialised equipment. Your surgeon will discuss any cost implications during your consultation and we can advise on insurance coverage.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>How experienced is your surgeon with robotic surgery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Mr Kulasegaran is one of New Zealand's most experienced robotic surgeons, having performed the country's first robotic oesophagectomy and gastrectomy. He has completed advanced robotic surgery training and performs robotic procedures regularly.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

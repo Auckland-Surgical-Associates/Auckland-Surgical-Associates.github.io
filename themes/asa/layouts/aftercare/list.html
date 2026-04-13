@@ -1,0 +1,99 @@
+{{ define "main" }}
+
+{{/* ===== 1. HERO ===== */}}
+{{ partial "page-hero.html" . }}
+
+{{/* ===== 2. INTRO ===== */}}
+<section class="section aftercare-intro-section">
+  <div class="container container--narrow">
+    <div class="aftercare-intro">
+      <div class="aftercare-intro__text">
+        <p class="lead">Weight loss surgery is a life-changing decision &mdash; and the journey doesn't end in the operating room. Our support groups are designed to help you navigate life after surgery with confidence, encouragement, and a community that understands.</p>
+        <p>Run as part of a comprehensive 5-year follow-up programme, our monthly support groups bring together patients at every stage of their post-surgery journey. Whether you had your procedure last month or last year, you are always welcome.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 3. MEETING DETAILS ===== */}}
+<section class="section section--white">
+  <div class="container">
+    <h2 class="section-header__title">Meeting schedule</h2>
+    <p class="section-header__subtitle">We hold two sessions each month &mdash; one virtual and one in-person &mdash; so you can attend whichever suits you best.</p>
+
+    <div class="aftercare-schedule">
+      <div class="aftercare-schedule__card">
+        <div class="aftercare-schedule__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M8 3v3"/><path d="M16 3v3"/><path d="M2 9h20"/></svg>
+        </div>
+        <h3>Virtual Session</h3>
+        <p class="aftercare-schedule__when"><strong>First Wednesday</strong> of each month</p>
+        <p class="aftercare-schedule__time">6:30 PM &ndash; 8:00 PM</p>
+        <p class="aftercare-schedule__note">Held via Zoom &mdash; join from anywhere in New Zealand</p>
+      </div>
+
+      <div class="aftercare-schedule__card">
+        <div class="aftercare-schedule__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>In-Person Session</h3>
+        <p class="aftercare-schedule__when"><strong>Last Wednesday</strong> of each month</p>
+        <p class="aftercare-schedule__time">6:30 PM &ndash; 8:00 PM</p>
+        <p class="aftercare-schedule__note">Unit 14/326 Sunset Road, Windsor Park, Auckland 0632</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 4. WHAT TO EXPECT ===== */}}
+<section class="section">
+  <div class="container">
+    <div class="grid grid--2-wide">
+      <div class="about-image">
+        <img src="{{ "images/help.jpg" | relURL }}" alt="Support group session at Auckland Surgical Associates" class="about-image__img" loading="lazy">
+      </div>
+      <div class="aftercare-expect">
+        <h2 class="section-header__title">What to expect</h2>
+        <p class="section-header__subtitle">A problem shared is a problem halved.</p>
+        <p>Our support groups follow a semi-structured format, facilitated by Amanda, our psychologist. Each session is a safe, welcoming space where you can share your experiences, ask questions, and hear from others who are on the same journey.</p>
+        <p>Sessions typically include:</p>
+        <ul class="aftercare-expect__list">
+          <li>
+            <strong>Celebrating progress</strong> &mdash; acknowledging milestones and wins, big and small
+          </li>
+          <li>
+            <strong>Peer support</strong> &mdash; hearing from others who understand the challenges and triumphs of life after surgery
+          </li>
+          <li>
+            <strong>Open discussion</strong> &mdash; a chance to ask questions, raise concerns, and share tips
+          </li>
+          <li>
+            <strong>Normalising the journey</strong> &mdash; understanding that ups and downs are a natural part of the process
+          </li>
+        </ul>
+        <p>Every participant contributes to the group &mdash; your experience and insights help others, just as theirs will help you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 5. HOW TO JOIN ===== */}}
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-box__icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </svg>
+      </div>
+      <h2 class="cta-box__title">How to join</h2>
+      <p class="cta-box__text">Support groups are available to all Auckland Surgical Associates bariatric surgery patients and commence after your procedure. You can also request to be placed on the pre-surgery list so you are ready to join as soon as you recover.</p>
+      <a href="#footer" class="btn btn--accent">Contact us to register</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

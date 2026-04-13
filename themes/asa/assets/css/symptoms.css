@@ -1,0 +1,226 @@
+/* ========================================
+   Symptoms Page
+   ======================================== */
+
+.symptoms-page {
+  padding-bottom: var(--space-16);
+}
+
+/* Layout: letter nav left, content right on desktop */
+.symptoms-layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .symptoms-layout {
+    flex-direction: row;
+    gap: var(--space-10);
+  }
+}
+
+/* ---- Letter Navigation (sidebar) ---- */
+
+.symptoms-nav {
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .symptoms-nav {
+    position: sticky;
+    top: 170px;
+    margin: 0px 0 100px 0;
+    align-self: flex-start;
+    width: 60px;
+  }
+}
+
+.symptoms-nav__letters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+@media (min-width: 768px) {
+  .symptoms-nav__letters {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+  }
+}
+
+.symptoms-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--border-radius);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.symptoms-nav__link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+/* ---- Symptoms Content ---- */
+
+.symptoms-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Letter group */
+.symptoms-group {
+  margin-bottom: var(--space-10);
+  scroll-margin-top: 180px;
+}
+
+.symptoms-group__letter {
+  font-size: var(--font-size-3xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--color-gray-100);
+}
+
+.symptoms-group__items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* ---- Individual Symptom Accordion ---- */
+
+.symptom-item {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.symptom-item:hover {
+  border-color: var(--color-gray-300);
+}
+
+.symptom-item[open] {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+/* Symptom name (summary trigger) */
+.symptom-item__name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-6);
+  cursor: pointer;
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
+  color: var(--color-gray-800);
+  line-height: var(--line-height-tight);
+  list-style: none;
+  transition: color var(--transition-fast);
+  user-select: none;
+}
+
+.symptom-item__name::-webkit-details-marker {
+  display: none;
+}
+
+.symptom-item__name::marker {
+  content: "";
+}
+
+.symptom-item__name:hover {
+  color: var(--color-primary);
+}
+
+/* Chevron rotation */
+.symptom-item__icon {
+  flex-shrink: 0;
+  color: var(--color-gray-400);
+  transition: transform var(--transition-base), color var(--transition-base);
+}
+
+.symptom-item[open] .symptom-item__icon {
+  transform: rotate(180deg);
+  color: var(--color-primary);
+}
+
+/* Symptom description body */
+.symptom-item__body {
+  padding: 0 var(--space-6) var(--space-6);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+  font-size: var(--font-size-base);
+}
+
+.symptom-item__body h2 {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+.symptom-item__body h2:first-child {
+  margin-top: 0;
+}
+
+.symptom-item__body h3 {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-700);
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.symptom-item__body p {
+  margin-bottom: var(--space-3);
+}
+
+.symptom-item__body p:last-child {
+  margin-bottom: 0;
+}
+
+.symptom-item__body ul,
+.symptom-item__body ol {
+  margin-bottom: var(--space-3);
+  padding-left: var(--space-6);
+}
+
+.symptom-item__body li {
+  margin-bottom: var(--space-1);
+}
+
+.symptom-item__body strong {
+  color: var(--color-gray-700);
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 640px) {
+  .symptom-item__name {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--font-size-sm);
+  }
+
+  .symptom-item__body {
+    padding: 0 var(--space-4) var(--space-4);
+    font-size: var(--font-size-sm);
+  }
+
+  .symptoms-group__letter {
+    font-size: var(--font-size-2xl);
+  }
+}

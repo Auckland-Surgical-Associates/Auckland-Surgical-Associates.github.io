@@ -1,0 +1,279 @@
+{{ define "main" }}
+
+{{/* ===== 1. HERO ===== */}}
+{{ partial "page-hero.html" . }}
+
+{{/* ===== 2. CONDITIONS TREATED ===== */}}
+<section class="section">
+  <div class="container">
+    <h2 class="section-header__title">Conditions we treat</h2>
+    <p class="section-header__subtitle">Our upper gastrointestinal surgeons specialise in the following conditions:</p>
+    <div class="conditions-grid">
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12c0-2.21 1.79-4 4-4s4 1.79 4 4"/><path d="M12 16v-4"/></svg>
+        </div>
+        <h3>Gastro-oesophageal Reflux Disease (GORD)</h3>
+        <p>Chronic acid reflux causing heartburn, regurgitation, and oesophageal damage. When medications no longer control symptoms, surgery offers a long-term solution.</p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12C12 7 7 4 4 6"/><path d="M12 12c0-5 5-8 8-6"/><path d="M4 18c2-2 5-3 8-3s6 1 8 3"/></svg>
+        </div>
+        <h3>Hiatus Hernia</h3>
+        <p>Part of the stomach pushes through the diaphragm into the chest cavity. Can cause severe reflux, chest pain, and difficulty swallowing.</p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v4a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M8 10v2a4 4 0 0 0 8 0v-2"/><path d="M12 16v6"/></svg>
+        </div>
+        <h3>Achalasia</h3>
+        <p>A rare condition where the oesophagus loses its ability to move food into the stomach and the lower oesophageal sphincter fails to relax properly.</p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+        </div>
+        <h3>Barrett&rsquo;s Oesophagus</h3>
+        <p>Long-term acid reflux can cause changes to the lining of the oesophagus. Requires monitoring and, in some cases, intervention to <a href="{{ "expertise/cancer-surgery/" | relURL }}">prevent progression to cancer</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 3. PROCEDURES ===== */}}
+<section class="section section--white expertise-solutions">
+  <div class="container">
+    <h2 class="section-header__title">Our Surgical Procedures</h2>
+    <p class="section-header__subtitle">All procedures are performed laparoscopically or robotically under general anaesthetic. The best approach is tailored to each individual patient during consultation.</p>
+
+    <div class="solutions-grid">
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Laparoscopic Fundoplication (Nissen/Toupet)</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>The gold standard for surgical treatment of GORD. The upper part of the stomach is wrapped around the lower oesophagus to strengthen the anti-reflux barrier.</p>
+          <ul>
+            <li>Complete (Nissen) or partial (Toupet) wrap options</li>
+            <li>Performed laparoscopically with small incisions</li>
+            <li>Effective long-term control of reflux symptoms</li>
+            <li>Usually 1&ndash;2 nights in hospital</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>LINX Reflux Management System</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>A small, flexible ring of magnetic beads placed around the lower oesophagus. The magnetic attraction helps keep the sphincter closed to prevent reflux while allowing normal swallowing.</p>
+          <ul>
+            <li>Minimally invasive laparoscopic procedure</li>
+            <li>Preserves the ability to belch and vomit</li>
+            <li>Typically same-day or overnight stay</li>
+            <li>Can be reversed if needed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Hiatus Hernia Repair</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>Laparoscopic repair of the diaphragmatic defect, returning the stomach to its correct position below the diaphragm. Often combined with an anti-reflux procedure.</p>
+          <ul>
+            <li>Laparoscopic approach with faster recovery</li>
+            <li>Mesh reinforcement may be used for large hernias</li>
+            <li>Combined with fundoplication when reflux is present</li>
+            <li>Effective for both sliding and paraesophageal hernias</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Heller Myotomy (for Achalasia)</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>A laparoscopic procedure that cuts the muscle fibres of the lower oesophageal sphincter, allowing food to pass more easily into the stomach. Usually combined with a partial fundoplication to prevent reflux.</p>
+          <ul>
+            <li>Laparoscopic or <a href="{{ "expertise/robotic-surgery/" | relURL }}">robotic</a> approach</li>
+            <li>Immediate improvement in swallowing</li>
+            <li>Partial wrap prevents post-operative reflux</li>
+            <li>Long-term relief for the majority of patients</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Complex Revisional Surgery</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>Redo procedures for patients who have had previous upper gastrointestinal surgery that has failed or caused complications. Our surgeons have extensive experience in complex revisional cases.</p>
+          <ul>
+            <li>Revision of failed fundoplication</li>
+            <li>Conversion between procedure types</li>
+            <li>Management of complications from prior surgery</li>
+            <li>Requires advanced laparoscopic expertise</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{/* ===== 4. WHAT TO EXPECT ===== */}}
+<section class="section expertise-expect">
+  <div class="container">
+    <div class="grid grid--2-wide">
+      <div class="about-image">
+        <img src="{{ "images/expertise/upper-gi.jpg" | relURL }}" alt="Patient consultation at Auckland Surgical Associates" class="about-image__img" loading="lazy">
+      </div>
+      <div>
+        <h2>What to expect</h2>
+
+        <h3 class="expertise-expect__step-title">
+          <span class="expertise-expect__dot"></span>
+          During your consultation
+        </h3>
+        <p>Meet with your surgeon to discuss your symptoms, medical history, and any previous investigations. We review your endoscopy and other test results to determine the best approach.</p>
+
+        <h3 class="expertise-expect__step-title">
+          <span class="expertise-expect__dot"></span>
+          Preparing for surgery
+        </h3>
+        <p>Depending on the procedure, you may need additional tests such as oesophageal manometry or pH monitoring. Your surgeon will explain the specific preparation required.</p>
+
+        <h3 class="expertise-expect__step-title">
+          <span class="expertise-expect__dot"></span>
+          Recovery
+        </h3>
+        <p>Most upper gastrointestinal procedures require 1&ndash;2 nights in hospital. You will follow a modified diet for several weeks as your body adjusts. Full recovery typically takes 2&ndash;4 weeks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 5. CTA ===== */}}
+<section class="section expertise-cta-section">
+  <div class="container">
+    <div class="expertise-cta">
+      <div class="expertise-cta__content">
+        <h2>Take the next step towards lasting relief</h2>
+        <p>If reflux, hernia, or swallowing difficulties are affecting your quality of life, book a consultation. Our surgeons will assess your condition and discuss the best treatment options.</p>
+        <a href="#footer" class="btn btn--accent btn--icon">
+          Contact us
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 6. FAQs ===== */}}
+<section class="section section--white" id="faqs">
+  <div class="container">
+    <div class="grid grid--2-wide">
+      <div>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="expertise-accordion">
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Who should consider anti-reflux surgery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Patients with reflux who</p>
+            <ul>
+              <li>do not respond or do not want to take long term medications</li>
+              <li>have a presence of hiatus hernia</li>
+              <li>bring up food/bile/vomitting</li>
+              <li>experience chest or upper abdominal discomfort</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Is anti-reflux surgery better then medication?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Surgery can provide durable symptom control and reduces reliance on lifelong medications.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>What is the best surgery for reflux?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Laparoscopic fundoplication is most common, often combined with hiatus hernia repair. Laparoscopic Gastric Bypass can also be considered for those who are carrying extra weight and have reflux.
+Robotic approaches can offer precision and improved views.</p>
+          </div>
+        </details>
+
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Will I still need to take reflux medication after surgery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Many patients are able to stop or significantly reduce reflux medication after anti-reflux surgery. Results depend on the procedure and individual factors, which your surgeon will discuss with you.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>How long will I be in hospital?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Most upper gastrointestinal procedures require a 1&ndash;2 night hospital stay. More complex revisional procedures may require a longer stay depending on individual circumstances.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>What dietary changes will I need to make after surgery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>After anti-reflux or hiatus hernia surgery, you will follow a soft/liquid diet for 2&ndash;4 weeks, gradually progressing to normal foods. Your surgeon and dietitian will provide detailed guidance.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Is robotic surgery available for these procedures?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Yes. Mr Kulasegaran performs <a href="{{ "expertise/robotic-surgery/" | relURL }}">robotic upper gastrointestinal procedures</a>, which can offer enhanced precision for complex cases. The suitability of robotic surgery will be discussed during your consultation.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>I&rsquo;ve had a previous anti-reflux operation that hasn&rsquo;t worked. Can you help?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Yes. Our surgeons have extensive experience in revisional upper gastrointestinal surgery. We will review your history, conduct thorough assessment, and discuss options for redo surgery.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

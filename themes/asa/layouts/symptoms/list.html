@@ -1,0 +1,49 @@
+{{ define "main" }}
+{{ partial "page-hero.html" . }}
+
+{{/* Symptoms Section */}}
+<section class="section symptoms-page">
+  <div class="container">
+    <div class="symptoms-layout">
+
+      {{/* Letter Navigation - Left sidebar on desktop */}}
+      <nav class="symptoms-nav" aria-label="Alphabetical navigation">
+        {{ $letters := slice }}
+        {{ range .Pages.GroupByParam "letter" }}
+          {{ $letters = $letters | append .Key }}
+        {{ end }}
+        <div class="symptoms-nav__letters">
+          {{ range $letters }}
+            <a href="#letter-{{ . }}" class="symptoms-nav__link">{{ . }}</a>
+          {{ end }}
+        </div>
+      </nav>
+
+      {{/* Symptoms List - Right content area */}}
+      <div class="symptoms-content">
+        {{ range .Pages.GroupByParam "letter" }}
+          <div class="symptoms-group" id="letter-{{ .Key }}">
+            <h2 class="symptoms-group__letter">{{ .Key }}</h2>
+            <div class="symptoms-group__items">
+              {{ range .Pages }}
+                <details class="symptom-item">
+                  <summary class="symptom-item__name">
+                    <span>{{ .Title }}</span>
+                    <svg class="symptom-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </summary>
+                  <div class="symptom-item__body">
+                    {{ .Content }}
+                  </div>
+                </details>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}

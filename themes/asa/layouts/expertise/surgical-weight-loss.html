@@ -1,0 +1,419 @@
+{{ define "main" }}
+
+{{/* ===== 1. HERO ===== */}}
+{{ partial "page-hero.html" . }}
+
+{{/* ===== 2. CONDITIONS TREATED ===== */}}
+{{/*  <section class="section">
+  <div class="container">
+    <h2 class="section-header__title">Conditions that benefit from bariatric surgery</h2>
+    <p class="section-header__subtitle">Weight loss surgery is particularly effective for patients living with:</p>
+    <div class="conditions-grid">
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2z"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+        </div>
+        <h3>Type 2 Diabetes</h3>
+        <p>Surgery can lead to significant improvement or complete resolution of Type 2 diabetes, often reducing or eliminating the need for medication.</p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Obstructive Sleep Apnoea</h3>
+        <p>Weight loss significantly reduces the severity of sleep apnoea, with many patients no longer requiring CPAP therapy after surgery.</p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+        </div>
+        <h3>Metabolic Syndrome</h3>
+        <p>A cluster of conditions including high blood pressure, elevated blood sugar, and abnormal cholesterol levels that increase cardiovascular risk.</p>
+      </div>
+      <div class="condition-card">
+        <div class="condition-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Musculoskeletal Pain &amp; Depression</h3>
+        <p>Significant weight loss reduces joint stress and has been shown to improve anxiety, depression, and overall quality of life related to obesity.</p>
+      </div>
+    </div>
+  </div>
+</section>  */}}
+
+{{/* ===== 3. SURGICAL SOLUTIONS ===== */}}
+<section class="section section--white expertise-solutions">
+  <div class="container">
+    <h2 class="section-header__title">Our Surgical Procedures</h2>
+    <p class="section-header__subtitle">All procedures are performed laparoscopically (keyhole) under general anaesthetic. The best approach is tailored to each individual patient during consultation.</p>
+
+    <div class="solutions-grid">
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Fobi Pouch Gastric Bypass <br/>(Roux-en-Y)</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>The Fobi Pouch Roux-en-Y Gastric Bypass creates a small stomach pouch and reroutes the small intestine, reducing both food intake and calorie absorption. It is widely regarded as the gold standard of bariatric surgery.</p>
+          <ul>
+            <li>Reduces stomach size and bypasses part of the small bowel</li>
+            <li>Approximately 60&ndash;70% excess body weight loss</li>
+            <li>Strong improvement in Type 2 diabetes and metabolic conditions</li>
+            <li>Excellent long-term results supported by decades of research</li>
+          </ul>
+        </div>
+        <div class="price">
+          $21,500
+          <span class="price__note">$22,500 with Silastic Ring</span>
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Gastric Sleeve</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>Sleeve gastrectomy removes approximately 80% of the stomach, leaving a narrow tube. This limits food intake and removes the part of the stomach that produces the hunger hormone ghrelin.</p>
+          <ul>
+            <li>Significantly reduces appetite and portion size</li>
+            <li>Around 70% excess weight loss within two years</li>
+            <li>May improve heart disease, blood pressure, and Type 2 diabetes</li>
+            <li>Lower rate of metabolic side-effects compared to bypass</li>
+          </ul>
+        </div>
+        <div class="price">
+          $17,500
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Mini Gastric Bypass</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>A simplified single-anastomosis bypass that creates a long, narrow stomach pouch connected directly to the small intestine. It offers similar weight loss outcomes to the traditional gastric bypass with a shorter operating time.</p>
+          <ul>
+            <li>Single connection point &mdash; technically simpler procedure</li>
+            <li>Comparable weight loss to Roux-en-Y bypass</li>
+            <li>Shorter operating time and potentially faster recovery</li>
+            <li>May be suitable as a revisional procedure</li>
+          </ul>
+        </div>
+        <div class="price">
+          $18,900
+          <span class="price__note">$22,500 with Silastic Ring</span>
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>Gastric Band</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>An adjustable silicone band is placed around the upper part of the stomach, creating a small pouch above the band. The band can be tightened or loosened over time to control the rate of weight loss.</p>
+          <ul>
+            <li>Adjustable and fully reversible</li>
+            <li>No cutting or stapling of the stomach</li>
+            <li>Gradual, steady weight loss over time</li>
+            <li>Requires ongoing follow-up for band adjustments</li>
+          </ul>
+        </div>
+        <div class="price">
+          Price on application
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>SADI-S</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>Single Anastomosis Duodeno-Ileal Bypass with Sleeve gastrectomy combines a sleeve with an intestinal bypass. This newer procedure offers significant weight loss with potentially fewer nutritional deficiencies than a traditional duodenal switch.</p>
+          <ul>
+            <li>Combines sleeve gastrectomy with intestinal bypass</li>
+            <li>High levels of sustained weight loss</li>
+            <li>Fewer nutritional deficiencies than BPD/DS</li>
+            <li>Effective for patients with very high BMI</li>
+            <li>Malabsorptive, requires very close follow up</li>
+          </ul>
+        </div>
+        <div class="price">
+          Price on application
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="solution-card__header">
+          <h3>BPD/DS</h3>
+        </div>
+        <div class="solution-card__body">
+          <p>Biliopancreatic Diversion with Duodenal Switch is a two-stage procedure combining a sleeve gastrectomy with extensive intestinal bypass. It offers the highest weight loss potential and is typically reserved for patients with very high BMI.</p>
+          <ul>
+            <li>Highest excess weight loss of all bariatric procedures</li>
+            <li>Very effective for severe obesity and metabolic disease</li>
+            <li>Two-stage approach allows tailored treatment</li>
+            <li>Requires lifelong nutritional monitoring and supplementation</li>
+          </ul>
+        </div>
+        <div class="price">
+          Price on application
+        </div>
+      </div>
+
+    </div>
+
+    <p class="solutions-link">
+      Learn more about each procedure at
+      <a href="https://www.surgicalweightsolutions.co.nz/weight-loss-surgery" target="_blank" rel="noopener">
+        Surgical Weight Solutions
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+      </a>
+    </p>
+  </div>
+</section>
+
+{{/* ===== 4. WHAT TO EXPECT ===== */}}
+<section class="section expertise-expect">
+  <div class="container">
+    <div class="grid grid--2-wide">
+      <div class="about-image">
+        <img src="{{ "images/expertise/weight-loss-surgical.jpg" | relURL }}" alt="Patient consultation at Auckland Surgical Associates" class="about-image__img" loading="lazy">
+      </div>
+      <div>
+        <h2>What to expect</h2>
+
+        <h3 class="expertise-expect__step-title">
+          <span class="expertise-expect__dot"></span>
+          During your consultation
+        </h3>
+        <p>You will meet your medical team together and discuss the issues you are facing today so they can understand how to help you best. You will have the opportunity to ask any questions and will be given plenty of time to discuss your concerns.</p>
+
+        <h3 class="expertise-expect__step-title">
+          <span class="expertise-expect__dot"></span>
+          After your consultation
+        </h3>
+        <p>We will book you in for surgery and provide a detailed pre-operative plan. This includes consultations with our dietitian to establish eating patterns and meal plans, and our psychologist where appropriate. Your clinical nurse specialist will guide you through every step of the preparation and is available for questions at any time.</p>
+
+        <h3 class="expertise-expect__step-title">
+          <span class="expertise-expect__dot"></span>
+          Long-term support
+        </h3>
+        <p>Weight loss surgery is only part of the equation &mdash; our support goes much further. We provide ongoing follow-up appointments, dietary guidance, <a href="/aftercare">support groups</a>, and direct access to your surgeon around the clock for your peace of mind.</p>
+
+        <a href="/aftercare" class="btn btn--accent btn--icon btn--small">
+          Aftercare Support Groups
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 6. PRE-OP / POST-OP GUIDE ===== */}}
+<section class="section section--white">
+  <div class="container">
+    <div class="grid grid--2-wide">
+      <div>
+        <h2>Weight loss surgery: a pre-op and post-op guide</h2>
+      </div>
+      <div class="expertise-accordion">
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Pre-op: preparing for weight loss surgery</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>The pre-operative process is designed to assess your suitability, prepare you for the changes after surgery, and address any potential complications. Key steps include:</p>
+            <ul>
+              <li>Surgeon assessment with full medical history review</li>
+              <li>Dietitian consultation covering eating habits and meal planning</li>
+              <li>Psychological evaluation where appropriate</li>
+              <li>Blood tests and other investigations as needed</li>
+            </ul>
+            <p>A pre-operative diet typically starts 2&ndash;3 weeks before surgery, designed to reduce liver size and optimise surgical conditions. Your dietitian will guide you through this.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>The procedure</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>All bariatric procedures are performed laparoscopically (keyhole surgery) under general anaesthetic. This means smaller incisions, less pain, faster recovery, and a shorter hospital stay compared to open surgery.</p>
+            <p>The specific procedure &mdash; gastric bypass or sleeve gastrectomy &mdash; will be determined during your consultation based on your individual circumstances and health goals. Both our surgeons have performed thousands of these procedures and are experienced in complex and revisional surgery.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Post-op: recovery and weight loss guide</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>After surgery, you will be monitored closely and encouraged to mobilise early. Most patients stay in hospital for 1&ndash;2 nights.</p>
+            <p><strong>First few weeks:</strong> You will follow a staged diet progression from fluids to soft foods to regular meals. Sip fluids regularly to prevent dehydration. Avoid lifting over 5kg for two weeks.</p>
+            <p><strong>Ongoing:</strong> Regular follow-up appointments with your surgeon, dietitian, and nurse specialist. You will need lifelong vitamin and mineral supplementation. Most patients see significant weight loss within the first 12&ndash;18 months.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>When to seek medical advice after surgery</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Contact your surgeon or clinical nurse specialist immediately if you experience:</p>
+            <ul>
+              <li>Fever above 38&deg;C</li>
+              <li>Increasing abdominal pain not relieved by medication</li>
+              <li>Persistent nausea or vomiting</li>
+              <li>Wound redness, swelling, or discharge</li>
+              <li>Chest pain or difficulty breathing</li>
+              <li>Inability to keep fluids down</li>
+            </ul>
+            <p>You have direct access to your surgeon 24/7 for any concerns following your procedure.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{/* ===== 7. FAQs ===== */}}
+<section class="section" id="faqs">
+  <div class="container">
+    <div class="grid grid--2-wide">
+      <div>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="expertise-accordion">
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Who is a leading bariatric surgeon in new zealand?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>A Leading bariatric surgeon is usually defined by volume, experience, patient outcomes and most importantly patient safety. Mr Suheelan Kulasegaran is a New Zealand based bariatric surgeon known for high volume practice and comprehensive long term patient support and availability. </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>What is the most effective bariatric surgery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>The best option depends on several factors including patient BMI, metabolic health and goals, lifestyle as well several other factors ie reflux. The most effective procedures include the sleeve gastrectomy and gastric bypass. </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>How much weight can i loose after bariatric srugery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Most patients can expect to loose anywhere between 60-80% of excess body weight depending on the procedure and adherence to follow up care.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>How much will my weight loss surgery cost?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Costs vary depending on the procedure and your individual circumstances. We provide a detailed quote after your initial consultation. We are an Affiliated Provider with Southern Cross Health Care, and we can advise on insurance options during your visit.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Who qualifies for weight loss surgery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Generally, candidates have a BMI of 40 or above, or a BMI of 30 or above with significant health problems such as Type 2 diabetes or sleep apnoea. Previous unsuccessful attempts at weight loss through diet and exercise are also considered. Your suitability is assessed comprehensively during consultation.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Where will my procedure take place?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Surgery is performed at accredited private hospital facilities in Auckland. The specific facility will be confirmed during your pre-operative planning.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Will I have to stay in the hospital overnight?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Yes. Most bariatric surgery patients stay in hospital for 1&ndash;2 nights. This allows our team to monitor your recovery, manage pain, and ensure you are tolerating fluids before you go home.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Do I need to stop any medications before surgery?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Some medications may need to be adjusted or paused before surgery. Your surgeon will review all your current medications during consultation and provide specific instructions. Never stop any medication without medical advice.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>What long-term support do you offer?</span>
+            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>We are committed to lifelong support. This includes regular follow-up appointments, ongoing dietitian and nurse specialist access, <a href="/aftercare">support groups</a>, and 24/7 direct access to your surgeon. We believe weight loss surgery is only part of the equation &mdash; our support goes much further.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 8. CROSS-LINK ===== */}}
+<section class="section--cream mb-12">
+  <div class="container">
+    <div class="cta-box cta-box--medical">
+      <div class="cta-box__icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/>
+          <path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/>
+        </svg>
+      </div>
+      <h2 class="cta-box__title">Prefer a non-surgical approach?</h2>
+      <p class="cta-box__text">Evidence-based medical weight loss using the latest prescription medications, dietary guidance, and psychological support — no surgery required.</p>
+      <a href="{{ "expertise/obesity-treatment/medical-weight-loss/" | relURL }}" class="btn btn--accent">Explore medical options</a>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 5. CTA ===== */}}
+<section class="section expertise-cta-section">
+  <div class="container">
+    <div class="expertise-cta">
+      <div class="expertise-cta__content">
+        <h2>Find out if weight loss surgery is right for you</h2>
+        <p>Every person is different. Book a consultation to discuss your options and take the first step towards a healthier future.</p>
+        <a href="#footer" class="btn btn--accent btn--icon">
+          Contact us
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

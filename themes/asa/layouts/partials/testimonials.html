@@ -1,0 +1,53 @@
+{{/* Testimonials Section - Reusable partial */}}
+{{/* Usage: {{ partial "testimonials.html" . }} */}}
+
+<section class="section testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-header__title">What our patients say</h2>
+      <p class="section-header__subtitle">Real stories from people whose lives have been transformed</p>
+    </div>
+
+    <div class="testimonials__grid">
+      <blockquote class="testimonial">
+        <svg class="testimonial__quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16-.95.1-1.956.76-3.022.66-1.065 1.515-1.867 2.558-2.403L9.373 5c-.8.396-1.56.898-2.26 1.505-.71.607-1.34 1.305-1.9 2.094s-.98 1.68-1.25 2.69-.346 2.04-.217 3.1c.168 1.4.62 2.52 1.356 3.35.735.84 1.652 1.26 2.748 1.26.965 0 1.766-.29 2.4-.878.628-.576.94-1.365.94-2.368l.002.004zm9.124 0c0-.88-.23-1.618-.69-2.217-.326-.42-.77-.692-1.327-.817-.56-.124-1.074-.13-1.54-.022-.16-.94.09-1.95.75-3.02.66-1.06 1.514-1.86 2.557-2.4L18.49 5c-.8.396-1.555.898-2.26 1.505-.708.607-1.34 1.305-1.894 2.094-.556.79-.97 1.68-1.24 2.69-.273 1-.345 2.04-.217 3.1.165 1.4.615 2.52 1.35 3.35.732.833 1.646 1.25 2.742 1.25.967 0 1.768-.29 2.402-.876.627-.576.942-1.365.942-2.368v.012z"/>
+        </svg>
+        <p class="testimonial__text">There are so many things I can now do: I can cross my legs, I can kneel and crouch when gardening, I can run through the park, bike ride by the sea and can skip down the front steps. There are also the things that I don't do now: I don't grunt when I get down to the floor, I don't need an extender belt on the plane, I don't see myself in a shop window and think Dear God, you are fat. I see myself and, if I think anything at all, I think, I am ordinary, I am normal, I am like other people.</p>
+        <footer class="testimonial__author">
+          <span class="testimonial__name">~ Linda</span>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <svg class="testimonial__quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16-.95.1-1.956.76-3.022.66-1.065 1.515-1.867 2.558-2.403L9.373 5c-.8.396-1.56.898-2.26 1.505-.71.607-1.34 1.305-1.9 2.094s-.98 1.68-1.25 2.69-.346 2.04-.217 3.1c.168 1.4.62 2.52 1.356 3.35.735.84 1.652 1.26 2.748 1.26.965 0 1.766-.29 2.4-.878.628-.576.94-1.365.94-2.368l.002.004zm9.124 0c0-.88-.23-1.618-.69-2.217-.326-.42-.77-.692-1.327-.817-.56-.124-1.074-.13-1.54-.022-.16-.94.09-1.95.75-3.02.66-1.06 1.514-1.86 2.557-2.4L18.49 5c-.8.396-1.555.898-2.26 1.505-.708.607-1.34 1.305-1.894 2.094-.556.79-.97 1.68-1.24 2.69-.273 1-.345 2.04-.217 3.1.165 1.4.615 2.52 1.35 3.35.732.833 1.646 1.25 2.742 1.25.967 0 1.768-.29 2.402-.876.627-.576.942-1.365.942-2.368v.012z"/>
+        </svg>
+        <p class="testimonial__text">I started at 160kg and now weigh 97kg. At one point I got down to 92kg but my wife said I was too skinny! I was suffering from chronic sleep apnoea and cellulitis, was heavily dependent on Tramadol for pain relief and not coping with life in general. As my weight declined all of these reduced or went away - including the reliance on pain killers.</p>
+        <footer class="testimonial__author">
+          <span class="testimonial__name">~ Terry</span>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <svg class="testimonial__quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16-.95.1-1.956.76-3.022.66-1.065 1.515-1.867 2.558-2.403L9.373 5c-.8.396-1.56.898-2.26 1.505-.71.607-1.34 1.305-1.9 2.094s-.98 1.68-1.25 2.69-.346 2.04-.217 3.1c.168 1.4.62 2.52 1.356 3.35.735.84 1.652 1.26 2.748 1.26.965 0 1.766-.29 2.4-.878.628-.576.94-1.365.94-2.368l.002.004zm9.124 0c0-.88-.23-1.618-.69-2.217-.326-.42-.77-.692-1.327-.817-.56-.124-1.074-.13-1.54-.022-.16-.94.09-1.95.75-3.02.66-1.06 1.514-1.86 2.557-2.4L18.49 5c-.8.396-1.555.898-2.26 1.505-.708.607-1.34 1.305-1.894 2.094-.556.79-.97 1.68-1.24 2.69-.273 1-.345 2.04-.217 3.1.165 1.4.615 2.52 1.35 3.35.732.833 1.646 1.25 2.742 1.25.967 0 1.768-.29 2.402-.876.627-.576.942-1.365.942-2.368v.012z"/>
+        </svg>
+        <p class="testimonial__text">I'm 34 years old, single and for most of my life I've been overweight. I had tried various diets, you name it - I've tried it! I have lost 22kgs, feel great, have more confidence in myself, have heaps of energy and most of all I am happy with myself for the first time in a long while.</p>
+        <footer class="testimonial__author">
+          <span class="testimonial__name">~ Sharlene</span>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <svg class="testimonial__quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16-.95.1-1.956.76-3.022.66-1.065 1.515-1.867 2.558-2.403L9.373 5c-.8.396-1.56.898-2.26 1.505-.71.607-1.34 1.305-1.9 2.094s-.98 1.68-1.25 2.69-.346 2.04-.217 3.1c.168 1.4.62 2.52 1.356 3.35.735.84 1.652 1.26 2.748 1.26.965 0 1.766-.29 2.4-.878.628-.576.94-1.365.94-2.368l.002.004zm9.124 0c0-.88-.23-1.618-.69-2.217-.326-.42-.77-.692-1.327-.817-.56-.124-1.074-.13-1.54-.022-.16-.94.09-1.95.75-3.02.66-1.06 1.514-1.86 2.557-2.4L18.49 5c-.8.396-1.555.898-2.26 1.505-.708.607-1.34 1.305-1.894 2.094-.556.79-.97 1.68-1.24 2.69-.273 1-.345 2.04-.217 3.1.165 1.4.615 2.52 1.35 3.35.732.833 1.646 1.25 2.742 1.25.967 0 1.768-.29 2.402-.876.627-.576.942-1.365.942-2.368v.012z"/>
+        </svg>
+        <p class="testimonial__text">This has changed my life. I wish I had known about this operation 10 years ago as it has been one of the greatest things ever to happen to me. I am a new person. It has ultimately changed my life for the better, both physically and mentally. Within 5 months of having this procedure done I finally got to swim with my kids at Christmas, feeling enough growth in my self-confidence to wear my togs.</p>
+        <footer class="testimonial__author">
+          <span class="testimonial__name">~ Christie</span>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>

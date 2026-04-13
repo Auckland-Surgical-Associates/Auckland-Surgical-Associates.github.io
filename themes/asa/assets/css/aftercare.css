@@ -1,0 +1,150 @@
+/* ========================================
+   Aftercare / Support Groups Page
+   ======================================== */
+
+/* ---- Intro Section with background image ---- */
+
+.aftercare-intro-section {
+  position: relative;
+  background-image: url('/images/group-bg.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+}
+
+.aftercare-intro__text .lead {
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-700);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-4);
+}
+
+.aftercare-intro__text p {
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+}
+
+.aftercare-intro__text {
+  max-width: 60%;
+}
+
+@media (max-width: 640px) {
+  .aftercare-intro__text {
+    max-width: 100%;
+  }
+
+  .aftercare-intro-section {
+    background-size: auto 60%;
+    background-position: right bottom;
+  }
+}
+
+/* ---- Schedule Cards ---- */
+
+.aftercare-schedule {
+  display: grid;
+  gap: var(--space-6);
+}
+
+@media (min-width: 640px) {
+  .aftercare-schedule {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.aftercare-schedule__card {
+  background-color: var(--color-cream);
+  border-radius: var(--border-radius-xl);
+  padding: var(--space-8);
+  text-align: center;
+}
+
+.aftercare-schedule__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--border-radius-lg);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-4);
+}
+
+.aftercare-schedule__card h3 {
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+
+.aftercare-schedule__when {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-1);
+}
+
+.aftercare-schedule__time {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+
+.aftercare-schedule__note {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  margin: 0;
+}
+
+/* ---- What to Expect ---- */
+
+.aftercare-expect p {
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-4);
+}
+
+.aftercare-expect__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-4) 0;
+}
+
+.aftercare-expect__list li {
+  position: relative;
+  padding-left: var(--space-6);
+  padding-bottom: var(--space-3);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+}
+
+.aftercare-expect__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+}
+
+/* ---- CTA overrides ---- */
+
+.aftercare-cta__phone {
+  color: var(--color-white);
+  text-decoration: underline;
+  font-weight: var(--font-weight-semibold);
+}
+
+.aftercare-cta__phone:hover {
+  opacity: 0.85;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 640px) {
+  .aftercare-intro__text .lead {
+    font-size: var(--font-size-lg);
+  }
+}

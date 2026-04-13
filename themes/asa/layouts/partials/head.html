@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{- $title := .Title -}}
+{{- if .IsHome -}}
+  {{- $title = .Site.Title -}}
+{{- else -}}
+  {{- $title = printf "%s | %s" .Title .Site.Title -}}
+{{- end -}}
+<title>{{ $title }}</title>
+
+{{- $desc := .Description | default .Site.Params.description }}
+{{- with $desc }}
+<meta name="description" content="{{ . }}">
+{{- end }}
+
+{{/* Open Graph / Social */}}
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{- with $desc }}
+<meta property="og:description" content="{{ . }}">
+{{- end }}
+
+{{/* Canonical URL */}}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* Favicon */}}
+<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+
+{{/* CSS - Using Hugo Pipes with bundling */}}
+{{- $variables := resources.Get "css/variables.css" -}}
+{{- $base := resources.Get "css/base.css" -}}
+{{- $layout := resources.Get "css/layout.css" -}}
+{{- $components := resources.Get "css/components.css" -}}
+{{- $faq := resources.Get "css/faq.css" -}}
+{{- $about := resources.Get "css/about.css" -}}
+{{- $symptoms := resources.Get "css/symptoms.css" -}}
+{{- $expertise := resources.Get "css/expertise.css" -}}
+{{- $aftercare := resources.Get "css/aftercare.css" -}}
+{{- $css := slice $variables $base $layout $components $faq $about $symptoms $expertise $aftercare | resources.Concat "css/bundle.css" -}}
+{{- if hugo.IsProduction -}}
+  {{- $css = $css | minify | fingerprint -}}
+{{- end -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}"{{ end }}>
+
+{{/* Fonts - Inter for headings */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+{{/* GogaLight - Custom font (fallback to system light fonts if not available) */}}
+<style>
+  @font-face {
+    font-family: 'Goga Light';
+    src: local('Goga Light'), local('GogaLight');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>

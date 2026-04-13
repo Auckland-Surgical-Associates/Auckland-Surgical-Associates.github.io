@@ -1,0 +1,12 @@
+name = "ASA"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourproject/blob/master/LICENSE"
+description = "Custom theme for Auckland Surgical Associates"
+homepage = "https://aucklandsurgicalassociates.co.nz/"
+tags = ["medical", "healthcare", "professional", "responsive"]
+features = ["responsive", "accessibility"]
+min_version = "0.120.0"
+
+[author]
+  name = "Auckland Surgical Associates"
+  homepage = "https://aucklandsurgicalassociates.co.nz/"

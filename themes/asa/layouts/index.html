@@ -1,0 +1,303 @@
+{{ define "main" }}
+
+{{- if .Site.Params.notice.enabled -}}
+  {{- partial "notice.html" . -}}
+{{- end -}}
+
+{{/* Hero Section */}}
+<section class="hero-home">
+  <div class="hero-home__bg">
+    <img src="{{ "images/team.jpg" | relURL }}" alt="Caring surgical practice" class="hero-home__image">
+    <div class="hero-home__overlay"></div>
+  </div>
+  <div class="container">
+    <div class="hero-home__content">
+      <h1 class="hero-home__title">
+        Leading weight loss, upper gi, hernia and gallbladder surgeons in New Zealand   
+      </h1>
+      <p>Advanced minimally invasive and robotic surgery focussed on patient safety,long term outcomes and compassionate care for patients and their families. </p>
+      <div class="hero-home__actions">
+        <a href="{{ "/about/" | relURL }}" class="btn btn--accent btn--icon">
+          More about us
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* Services Section - Let's get it sorted properly */}}
+<section class="section">
+  <div class="container">
+    <div class="grid grid--2-wide">
+      <div>
+        <div class="services-list">
+          <a href="{{ "/expertise/obesity-treatment/" | relURL }}" class="service-link">
+            <div>
+              <svg class="dropdown__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4.6 11.7L1 11.7M4.5 11.7L3.1 10.3M3.1 13.3L4.5 11.8"/>
+                <path d="M4.6 6C4.6 6 8.2 10.8 5.1 17.5"/>
+                <path d="M19.4 6C19.4 6 15.5 11.1 19.4 18"/>
+                <path d="M19.4 11.7L23 11.7M19.5 11.7L20.9 10.3M20.9 13.3L19.5 11.8"/>
+                <path d="M12.2 13.8v.5"/>
+              </svg>
+              <div>
+                <span>Obesity treatment</span>
+                <br/><small>Surgical and Medical Weight loss solutions </small>
+              </div>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="{{ "/expertise/upper-gi-surgery/" | relURL }}" class="service-link">
+            <div>
+              <svg class="dropdown__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 2.4L6.3 2.4C6.3 2.4 4.4 8.4 9.7 9.5 9.3 11.6 6.3 12.9 6.3 15C4 15.1 1 14.5 1.2 21.2 3.4 21.4 3.7 21.2 3.7 21.2 3.7 21.2 2.8 17.3 5.6 17.6 6.5 18.6 8.5 22.7 15.8 17.6 23 12.6 20.9 8.4 19.8 6.8 18.8 5.3 15.1 1.3 10.6 6.8 7.7 5.9 9 2.4 9 2.4Z"/>
+              </svg>
+              <div>
+                <span>Upper Gastrointestinal Surgery</span>
+                <br/><small>Anti-reflux surgery, Hiatus hernia, achalasia, redo and complex revisional surgery</small>
+              </div>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="{{ "/expertise/cancer-surgery/" | relURL }}" class="service-link">
+            <div>
+              <svg class="dropdown__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2c-1.5 2-4 5-4 8a4 4 0 0 0 4 4 4 4 0 0 0 4-4c0-3-2.5-6-4-8z"/>
+                <path d="M12 14v8"/>
+                <path d="M9 18h6"/>
+              </svg>
+              <div>
+                <span>Cancer Surgery</span>
+                <br/><small>Oesophageal and gastric cancer</small>
+              </div>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="{{ "/expertise/hernia-and-gallbladder-surgery/" | relURL }}" class="service-link">
+            <div>
+              <svg class="dropdown__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>
+              </svg>
+              <div>
+                <span>Hernia and Gallbladder surgery</span>
+                <br/><small>Hernia and Gallbladder surgery</small>
+              </div>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="{{ "/expertise/robotic-surgery/" | relURL }}" class="service-link">
+            <div>
+              <svg class="dropdown__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2a2 2 0 0 1 2 2v2h-4V4a2 2 0 0 1 2-2z"/>
+                <path d="M8 6h8v4H8z"/>
+                <path d="M6 10l-3 8h3l2-4"/>
+                <path d="M18 10l3 8h-3l-2-4"/>
+                <path d="M10 14h4v4a2 2 0 0 1-4 0v-4z"/>
+              </svg>
+              <div>
+                <span>Robotic surgery</span>
+                <br/><small>Upper Gastrointestinal/Bariatric and General surgical cases</small>
+                </div>
+              </span>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="{{ "/expertise/endoscopy/" | relURL }}" class="service-link">
+            <div>
+              <svg class="dropdown__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 2a10 10 0 0 1 10 10"/>
+                <path d="M12 2a10 10 0 0 0-10 10"/>
+                <path d="M12 22a10 10 0 0 1-10-10"/>
+                <path d="M12 22a10 10 0 0 0 10-10"/>
+                <circle cx="12" cy="12" r="7" fill="none"/>
+              </svg>
+              <span>Endoscopy</span>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="mt-12">
+          <h4>Looking for weight loss surgery specific information?</h4>
+          <a href="https://www.surgicalweightsolutions.co.nz/" target="_blank" class="btn btn--primary">Visit Surgical Weight Solutions
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="services-intro">
+        <h2>Supporting you with the right care</h2>
+        <p>Auckland Surgical Associates and Surgical Weight Solutions are conveniently located on the North Shore, is led by surgical partners Dr Suheelan Kulasegaran and Dr Michael Booth, both widely regarded as leaders in their field. Together, they bring more than 30 years of combined experience across General, Upper Gastrointestinal, and Bariatric surgery, supported by an extensive record of academic publication and active involvement in research and teaching. </p>
+          
+        <p>Their expertise spans laparoscopic, robotic, and open surgical techniques. 
+        Mr Suheelan Kulasegaran and Mr Michael Booth have significant experience in both primary and complex revisional laparoscopic surgery. Dr Kulasegaran also performs robotic procedures and performed New Zealand's first robotic oesophagectomy and gastrectomy.</p>
+
+        <div class="info-block text-sm text-muted">
+          <div>
+            <svg class="notice__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <p>Please be aware that some procedures require a referral from your GP. If you're unsure whether a referral is needed, you're welcome to contact the clinic for guidance.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{/* Contact CTA Section */}}
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-box__icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+      </div>
+      <h2 class="cta-box__title">If you have unusual abdominal or bowel discomfort, our team may be able to help.</h2>
+      <p class="cta-box__text">Ask your GP to refer you to Auckland Surgical Associates, or contact us directly to discuss your options.</p>
+      <a href="#footer" class="btn btn--accent">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+{{/* About Section - You're in safe hands */}}
+<section class="section section--white">
+  <div class="container">
+    <div class="grid grid--2-wide grid--reverse-mobile">
+      <div class="about-image">
+        <img src="{{ "images/care.jpg" | relURL }}" alt="Our team" class="about-image__img">
+      </div>
+      <div class="about-content">
+        <h2>You're in good hands</h2>
+        <p class="lead">Our Team are committed to providing world-class support from start to finish.</p>
+        <p>Through our comprehensive consultation we endeavour to find the best solution for you, tailored to your needs and wants.</p>
+        <div class="about-credentials">
+          <div class="credential">
+            <svg class="credential__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>More than 30 years of combined experience</span>
+          </div>
+          <div class="credential">
+            <svg class="credential__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>Team of Specialists covering all your needs through this process</span>
+          </div>
+          <div class="credential">
+            <svg class="credential__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>Support Groups</span>
+          </div>
+          <div class="credential">
+            <svg class="credential__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>Affiliated Provider with Southern Cross Health Care</span>
+          </div>
+        </div>
+        <a href="{{ "/faq/" | relURL }}" class="btn btn--accent">Read our FAQ's 
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* associated orgs */}}
+<section class="associated-orgs section--white">
+  <div><a href="https://aanzgosa.org/" target="_blank"><img src="/images/logo_AANZGOSA.png"
+        title="The Australian and Aotearoa New Zealand Gastric and Oesophageal Surgery Association"></a></div>
+  <div><a href="https://anzmoss.com.au" target="_blank"><img src="/images/logo_anzmoss.png"
+        alt="Australian &amp; New Zealand Metabolic and Obesity Surgery Society"></a></div>
+  <div><a href="https://www.ifso.com/" target="_blank"><img src="/images/logo_ifso.png"
+        alt="The International Federation for the Surgery of Obesity and metabolic disorders"
+        style="max-width:140px"></a></div>
+  <div><a href="https://www.nzags.co.nz/" target="_blank"><img src="/images/logo_nzags.jpg"
+        alt="New Zealand Association of General Surgeons"></a></div>
+  <div><a href="https://www.surgeons.org/" target="_blank"><img src="/images/logo_college_of_surgens.png"
+        alt="Royal Australasian College of Surgeons"></a></div>
+</section>
+
+{{/* What to Expect Timeline */}}
+<section class="section timeline-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-header__title">What to Expect</h2>
+      <p class="section-header__subtitle">Your journey with us, step by step</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline__step">
+        <span class="timeline__number">1</span>
+        <h3 class="timeline__title">Get in Touch</h3>
+        <p class="timeline__text">Call us or email us to make your initial booking. We respond within <strong>24 hours</strong>.</p>
+      </div>
+      <div class="timeline__step">
+        <span class="timeline__number">2</span>
+        <h3 class="timeline__title">Consultation</h3>
+        <p class="timeline__text">Your consultation is booked within <strong>5 working days</strong> of your enquiry.</p>
+      </div>
+      <div class="timeline__step">
+        <span class="timeline__number">3</span>
+        <h3 class="timeline__title">Surgery</h3>
+        <p class="timeline__text">We aim to offer you a date within <strong>2 &ndash; 4 weeks</strong> depending on your surgery.</p>
+      </div>
+      <div class="timeline__step">
+        <span class="timeline__number">4</span>
+        <h3 class="timeline__title">Post-Op Follow Up</h3>
+        <p class="timeline__text">Your follow-up appointment is scheduled <strong>1 &ndash; 2 weeks</strong> after surgery.</p>
+      </div>
+      <div class="timeline__step timeline__step--accent">
+        <span class="timeline__number">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </span>
+        <h3 class="timeline__title">24/7 Access</h3>
+        <p class="timeline__text">Direct access to your surgeon around the clock for your peace of mind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* Testimonials Section */}}
+{{ partial "testimonials.html" . }}
+
+{{ end }}
