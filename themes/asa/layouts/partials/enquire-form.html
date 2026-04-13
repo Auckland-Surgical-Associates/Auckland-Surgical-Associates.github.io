@@ -29,20 +29,21 @@
   <h3 class="enquire-form__heading">{{ . }}</h3>
   {{- end }}
   <div class="enquire-form__fields">
+    <div class="enquire-form__field">
+      <label for="{{ $id }}-name" class="sr-only">Name</label>
+      <input type="text" name="name" id="{{ $id }}-name" placeholder="Your name" required class="enquire-form__input">
+    </div>
     <div class="enquire-form__row">
-      <div class="enquire-form__field">
-        <label for="{{ $id }}-name" class="sr-only">Name</label>
-        <input type="text" name="name" id="{{ $id }}-name" placeholder="Your name" required class="enquire-form__input">
-      </div>
       <div class="enquire-form__field">
         <label for="{{ $id }}-email" class="sr-only">Email</label>
         <input type="email" name="email" id="{{ $id }}-email" placeholder="Your email" required class="enquire-form__input">
       </div>
+      <div class="enquire-form__field">
+        <label for="{{ $id }}-phone" class="sr-only">Phone</label>
+        <input type="tel" name="phone" id="{{ $id }}-phone" placeholder="Your phone number" required class="enquire-form__input">
+      </div>
     </div>
-    <div class="enquire-form__field">
-      <label for="{{ $id }}-phone" class="sr-only">Phone</label>
-      <input type="tel" name="phone" id="{{ $id }}-phone" placeholder="Your phone number" required class="enquire-form__input">
-    </div>
+
     <div class="enquire-form__field">
       <label for="{{ $id }}-message" class="sr-only">Message</label>
       <textarea name="message" id="{{ $id }}-message" rows="4" placeholder="Your message" required class="enquire-form__input enquire-form__textarea"></textarea>
