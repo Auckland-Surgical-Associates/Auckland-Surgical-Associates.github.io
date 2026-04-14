@@ -130,6 +130,9 @@
   {{/* Mobile Menu - Slides from RIGHT */}}
   <nav class="mobile-menu" aria-label="Mobile navigation">
     <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a href="{{ "/" | relURL }}" class="mobile-menu__link{{ if .IsHome }} mobile-menu__link--active{{ end }}">Home</a>
+      </li>
       {{- range .Site.Menus.main }}
         {{- if .HasChildren }}
         <li class="mobile-menu__item">

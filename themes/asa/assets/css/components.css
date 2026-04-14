@@ -312,8 +312,15 @@
   grid-template-columns: auto 1fr auto;
   align-items: center;
   justify-content: space-between;
+  padding: var(--space-4);
+  gap: var(--space-4);
+}
+
+@media (min-width: 1024px) {
+.site-header__inner {
   padding: var(--space-6);
   gap: var(--space-6);
+}
 }
 
 /* ---- Right column: utility + nav stacked ---- */
@@ -375,6 +382,7 @@
 }
 
 /* logos */
+/* ASA */
 .site-header__logo_left {
   a img {
     width: 100%;
@@ -382,6 +390,7 @@
   }
 }
 
+/* SWS */
 .site-header__logo_right {
   a img {
     width: 100%;
@@ -410,8 +419,9 @@
     grid-row: 2;
     
     a img {
-      margin-left: 0;
-      max-width: 225px;
+      /* margin-left: 5px; */
+      margin: 0 auto;
+      max-width: 300px;
     }
   }
 }
@@ -652,7 +662,7 @@
   margin-bottom: var(--space-1);
 }
 
-.mobile-menu__item:nth-child(7) {
+.mobile-menu__item:nth-child(8) {
   border-bottom: 1px solid var(--color-gray-200);
 }
 
