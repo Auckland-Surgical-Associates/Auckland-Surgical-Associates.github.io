@@ -23,7 +23,7 @@
   {{- with .page -}}{{- $page = . -}}{{- end -}}
 {{- end -}}
 
-<form class="enquire-form{{ if eq $variant "dark" }} enquire-form--dark{{ end }}">
+<form class="enquire-form{{ if eq $variant "dark" }} enquire-form--dark{{ end }}" action="https://staticcontact.com/send/d7f1fd59-e198-4aa1-ab04-3df32e3ec503" method="post" id="contactform">
   <input type="hidden" name="form-name" value="service-enquiry">
   {{- with $heading }}
   <h3 class="enquire-form__heading">{{ . }}</h3>
@@ -33,7 +33,7 @@
       <label for="{{ $id }}-name" class="sr-only">Name</label>
       <input type="text" name="name" id="{{ $id }}-name" placeholder="Your name" required class="enquire-form__input">
     </div>
-    <div class="enquire-form__row">
+    {{/*  <div class="enquire-form__row">  */}}
       <div class="enquire-form__field">
         <label for="{{ $id }}-email" class="sr-only">Email</label>
         <input type="email" name="email" id="{{ $id }}-email" placeholder="Your email" required class="enquire-form__input">
@@ -42,7 +42,7 @@
         <label for="{{ $id }}-phone" class="sr-only">Phone</label>
         <input type="tel" name="phone" id="{{ $id }}-phone" placeholder="Your phone number" required class="enquire-form__input">
       </div>
-    </div>
+    {{/*  </div>  */}}
 
     <div class="enquire-form__field">
       <label for="{{ $id }}-message" class="sr-only">Message</label>
@@ -50,4 +50,5 @@
     </div>
   </div>
   <button type="submit" class="btn btn--accent">Enquire Now <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+  <script src="https://staticcontact.com/js/static_contact_botbuster.js"></script>
 </form>
