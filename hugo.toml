@@ -3,6 +3,7 @@ baseURL = 'http://localhost'
 languageCode = 'en-nz'
 title = 'Auckland Surgical Associates'
 theme = 'asa'
+enableRobotsTXT = true
 
 [params]
   description = 'General Surgery Experts | Comprehensive Care'

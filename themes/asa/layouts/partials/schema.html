@@ -1,0 +1,106 @@
+{{/* Schema.org JSON-LD structured data */}}
+
+{{/* --- Organization + MedicalBusiness (homepage only) --- */}}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ "images/logo.png" | absURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "telephone": "{{ .Site.Params.phone }}",
+  "email": "{{ .Site.Params.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "17 Shea Terrace",
+    "addressLocality": "Takapuna",
+    "addressRegion": "Auckland",
+    "addressCountry": "NZ"
+  },
+  "openingHours": "Mo-Fr 08:00-17:00",
+  "medicalSpecialty": [
+    "Bariatric Surgery",
+    "Upper Gastrointestinal Surgery",
+    "General Surgery",
+    "Endoscopy"
+  ],
+  "sameAs": [
+    "https://www.facebook.com/SuheelanKulasegaranSurgeon",
+    "https://www.instagram.com/drsuheelan/"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}"
+}
+</script>
+{{- end }}
+
+{{/* --- BreadcrumbList (all non-home pages) --- */}}
+{{- if not .IsHome }}
+{{- $items := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" (.Site.BaseURL | string)) }}
+{{- $ancestors := .Ancestors.Reverse }}
+{{- $pos := 1 }}
+{{- range $ancestors }}
+  {{- if not .IsHome }}
+    {{- $pos = add $pos 1 }}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" (.Permalink | string)) }}
+  {{- end }}
+{{- end }}
+{{- $pos = add $pos 1 }}
+{{- $items = $items | append (dict "@type" "ListItem" "position" $pos "name" $.Title "item" ($.Permalink | string)) }}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $items | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end }}
+
+{{/* --- FAQPage (FAQ section) --- */}}
+{{- if eq .Section "faq" }}
+{{- $rendered := .Content }}
+{{- $h3s := findRE `<h3 id="[^"]*">[^<]+</h3>` $rendered }}
+{{- if $h3s }}
+{{- $questions := slice }}
+{{- range $h3s }}
+  {{- $q := replaceRE `<h3[^>]*>` "" . | replaceRE `</h3>` "" }}
+  {{- $questions = $questions | append $q }}
+{{- end }}
+{{- $parts := split $rendered "<h3 " }}
+{{- $entities := slice }}
+{{- range $i, $q := $questions }}
+  {{- $partIdx := add $i 1 }}
+  {{- if lt $partIdx (len $parts) }}
+    {{- $block := index $parts $partIdx }}
+    {{- $answerHTML := replaceRE `^[^>]*>[^<]*</h3>` "" $block | replaceRE `<h[23][\s\S]*` "" }}
+    {{- $answer := $answerHTML | plainify | replaceRE `\s+` " " | strings.TrimLeft " " | strings.TrimRight " " | htmlUnescape }}
+    {{- if gt (len $answer) 0 }}
+      {{- $entities = $entities | append (dict "@type" "Question" "name" (htmlUnescape $q) "acceptedAnswer" (dict "@type" "Answer" "text" $answer)) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- if $entities }}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $entities | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{/* --- MedicalWebPage (expertise pages) --- */}}
+{{- if eq .Section "expertise" }}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@type" "MedicalWebPage" "name" .Title "description" .Description "url" (.Permalink | string) "lastReviewed" (.Date.Format "2006-01-02") "medicalAudience" (dict "@type" "PatientAudience") "mainContentOfPage" (dict "@type" "MedicalCondition" "name" .Title) | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end }}
+
+{{/* --- WebPage (all other non-home pages) --- */}}
+{{- if and (not .IsHome) (ne .Section "faq") (ne .Section "expertise") }}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@type" "WebPage" "name" .Title "description" .Description "url" (.Permalink | string) | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end }}
