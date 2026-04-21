@@ -4,6 +4,7 @@ languageCode = 'en-nz'
 title = 'Auckland Surgical Associates'
 theme = 'asa'
 enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
 
 [params]
   description = 'General Surgery Experts | Comprehensive Care'
