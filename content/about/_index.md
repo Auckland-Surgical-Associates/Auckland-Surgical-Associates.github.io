@@ -5,5 +5,5 @@ description: "Meet the experienced team at Auckland Surgical Associates — surg
 draft: false
 layout: "about"
 hero_title: "Meet our Team"
-hero_subtitle: "Our practice has provided bariatric surgery since the early 2000s. Our surgeons have mentored more than a dozen surgeons who now have their own bariatric practices across New Zealand and overseas. We use a dedicated multidisciplinary team — surgeon, dietitian, psychologist and clinical nurse specialist — to achieve the best possible outcomes for our patients."
+hero_subtitle: "Our highly trained practice has provided Bariatric and Upper Gastrointestinal surgery since the early 2000s."
 ---

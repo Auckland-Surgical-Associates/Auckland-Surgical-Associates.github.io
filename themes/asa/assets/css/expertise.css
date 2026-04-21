@@ -94,6 +94,19 @@
   flex: 1;
 }
 
+.solution-card__body .solution-card__image-container {
+  width: 100%;
+  margin-bottom: var(--space-4);
+  overflow: hidden;
+  max-height: 263px;
+  display: flex;
+  align-items: center;
+}
+
+.solution-card__body .solution-card__image-container img {
+  width: 100%;
+}
+
 .solution-card__body p {
   color: var(--color-gray-600);
   line-height: var(--line-height-relaxed);
@@ -400,15 +413,16 @@
 
 .pathway-card__header {
   padding: var(--space-6) var(--space-6) 0 var(--space-6);
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 24px 1fr;
   gap: var(--space-4);
+  align-items: center;
   color: var(--color-primary);
 }
 
 .pathway-card__header h3 {
   color: var(--color-primary);
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-3xl);
   margin: 0;
 }
 
