@@ -278,6 +278,7 @@
 .about-image__img {
   object-fit: cover;
   aspect-ratio: 4 / 3;
+  min-height: 430px;
 }
 
 @media (min-width: 768px) {

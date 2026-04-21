@@ -1,174 +1,28 @@
 {{ define "main" }}
 {{ partial "page-hero.html" . }}
 
-{{/* Team Section */}}
-<section class="section team-section">
+<section class="section">
   <div class="container">
-
-    {{/* --- Mr Suheelan Kulasegaran --- */}}
-    <article class="team-member team-member--featured">
-      <div>
-        <div class="team-member__image-wrap">
-          <img src="{{ "images/team/suheelan-kulasegaran.jpg" | relURL }}" alt="Mr Suheelan Kulasegaran, Upper Gastrointestinal and Bariatric Surgeon at Auckland Surgical Associates" class="team-member__image" loading="lazy">
-        </div>
-      </div>
-      <div class="team-member__content">
-        <h2 class="team-member__name">Mr Suheelan Kulasegaran</h2>
-        <p class="team-member__role">Surgeon</p>
-        <p class="team-member__credentials">MBChB, PGDipSurgAnat, ChM(Edinburgh), FRACS</p>
-        <p>New Zealand and Internationally trained Upper Gastrointestinal, Bariatric, Laparoscopic Surgeon, General Surgeon and Endoscopist who grew up in Hamilton and graduated with Distinction from the University of Auckland Medical School. He earned his Postgraduate Fellowship in General Surgery from the Royal Australasian College of Surgeons, followed by subspecialist fellowship training at Royal North Shore Hospital in Sydney and as Senior Clinical Oesophago-Gastric Fellow at Norfolk and Norwich University Hospital, United Kingdom.</p>
-        <p>He served as Consultant Oesophago-Gastric Surgeon at Norfolk and Norwich University Hospital, gaining training in minimally invasive upper gastrointestinal surgery. He completed advanced robotic surgery courses and received robotic accreditation. He earned a Master of Surgery from the University of Edinburgh.</p>
-        <p>He is actively involved in Upper Gastrointestinal and Bariatric research with extensive publications on benchmarking standards and quality performance indicators. Currently an Honorary Senior Lecturer at the University of Auckland. In public practice at North Shore and Waitakere Hospital, he specialises in Primary and Complex revisional Bariatrics, malignant and benign oesophageal and stomach diseases, reflux disease, hiatal hernias, gallbladder disease, and hernias. </p>
-        <p>He is a high-volume tertiary level surgeon who does primary and complex Upper GI, Bariatric and revisional surgery in both private and public practice. He works at North Shore Hospital. He is a leading revisional Bariatric/Upper GI surgeon who manages difficult cases referred from primary care and other surgeons particularly those that have failed bariatric surgery, complications after gastric bypass and sleeve gastrectomy, reflux after sleeve gastrectomy, anastomotic issues, weight regain after bariatric surgery, hiatal hernia revisional surgery and complex redo fundoplications. </p>
-        <p>Fluent in three languages. Available for urgent and non-urgent consults.</p>
-        <p><a href="https://www.researchgate.net/profile/Suheelan-Kulasegaran" target="_blank" rel="noopener" class="btn btn--primary">View his publications on ResearchGate <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="7" y1="17" x2="17" y2="7"></line>
-              <polyline points="7 7 17 7 17 17"></polyline>
-            </svg></a></p>
-        
-        <p class="team-member__memberships"><strong>Professional Memberships:</strong> NZAGS, RACS (Upper Gastrointestinal and Bariatric section), AANZGOSA/ANZMOSS, IFSO</p>
-        <div class="team-member__socials">
-          <a href="https://suheelankulasegaran.co.nz/" target="_blank" rel="noopener" class="team-member__social" aria-label="Website">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </a>
-          <a href="https://www.facebook.com/SuheelanKulasegaranSurgeon" target="_blank" rel="noopener" class="team-member__social" aria-label="Facebook">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/drsuheelan/profilecard/?igsh=aXc1MWwxenRwamIw" target="_blank" rel="noopener" class="team-member__social" aria-label="Instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://www.researchgate.net/profile/Suheelan-Kulasegaran" target="_blank" rel="noopener" class="team-member__social" aria-label="ResearchGate">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.123 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.901-.15-1.21-.353-.306-.203-.517-.454-.67-.915a3.136 3.136 0 0 1-.147-.762 17.366 17.367 0 0 1-.034-.656c-.01-.26-.014-.572-.014-.939a26.401 26.403 0 0 1 .014-.938 15.821 15.822 0 0 1 .035-.656 3.19 3.19 0 0 1 .148-.76 1.89 1.89 0 0 1 .742-1.01c.344-.244.593-.352 1.137-.352.508 0 .815.096 1.144.303.33.207.528.492.764.925.047.094.111.118.198.07l1.044-.43c.075-.048.09-.115.042-.199a3.549 3.549 0 0 0-.466-.742 3 3 0 0 0-.679-.607 3.313 3.313 0 0 0-.903-.41A4.068 4.068 0 0 0 19.586 0zM8.217 5.836c-1.69 0-3.036.086-4.297.086-1.146 0-2.291 0-3.007-.029v.831l1.088.2c.744.144 1.174.488 1.174 2.264v11.288c0 1.777-.43 2.12-1.174 2.263l-1.088.2v.832c.773-.029 2.12-.086 3.465-.086 1.29 0 2.951.057 3.667.086v-.831l-1.49-.2c-.773-.115-1.174-.487-1.174-2.264v-4.784c.688.057 1.29.057 2.206.057 1.748 3.123 3.41 5.472 4.355 6.56.86 1.032 2.177 1.691 3.839 1.691.487 0 1.003-.086 1.318-.23v-.744c-1.031 0-2.063-.716-2.808-1.518-1.26-1.376-2.95-3.582-4.355-6.074 2.32-.545 4.04-2.722 4.04-4.9 0-3.208-2.492-4.698-5.758-4.698zm-.515 1.29c2.406 0 3.839 1.26 3.839 3.552 0 2.263-1.547 3.782-4.097 3.782-.974 0-1.404-.03-2.063-.086v-7.19c.66-.059 1.547-.059 2.32-.059z"/></svg>
-          </a>
-        </div>
-      </div>
-    </article>
-
-    {{/* --- Mr Michael Booth --- */}}
-    <article class="team-member team-member--featured">
-      <div class="team-member__image-wrap">
-        <img src="{{ "images/team/michael-booth.jpg" | relURL }}" alt="Mr Michael Booth, experienced surgeon at Auckland Surgical Associates" class="team-member__image" loading="lazy">
-      </div>
-      <div class="team-member__content">
-        <h2 class="team-member__name">Mr Michael Booth</h2>
-        <p class="team-member__role">Surgeon</p>
-        <p class="team-member__credentials">MBChB MBA FRACS</p>
-        <p>Michael is highly experienced in open and laparoscopic surgery and has performed more than 5000 laparoscopic operations for gallstones, hernia, reflux and weight loss. He has skills in both open and laparoscopic surgery and is an experienced endoscopist.</p>
-        <p>He holds an appointment at North Shore Hospital (Te Whatu Ora Waitemata) and has trained many Upper Gastrointestinal and Bariatric Fellows practicing as consultants in New Zealand and overseas. He is a member of several Surgical Societies.</p>
-        <p>He has led Bariatric clinical research including Randomised Controlled trials for obesity and Type 2 diabetes treatment and Anti-reflux surgery, with particular interest in long-term surgical outcomes. </p>
-        <p>He is an Affiliated Provider with Southern Cross Health Care.</p>
-      </div>
-    </article>
-
-    {{/* --- Support Team --- */}}
-    <div class="team-grid">
-
-      {{/* Rachael Grubb - PLACEHOLDER */}}
-      {{/*  <article class="team-card">
-        <div class="team-card__image-wrap">
-          <div class="team-card__placeholder">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-        </div>
-        <div class="team-card__body">
-          <h3 class="team-card__name">Rachael Grubb</h3>
-          <p class="team-card__role">Business Manager</p>
-          <p class="team-card__bio">Bio coming soon.</p>
-        </div>
-      </article>  */}}
-
-      {{/* Maria McDonald */}}
-      <article class="team-card">
-        <div class="team-card__image-wrap">
-          <img src="{{ "images/team/maria-mcdonald.jpg" | relURL }}" alt="Maria McDonald, Practice Manager at Auckland Surgical Associates" class="team-card__image" loading="lazy">
-        </div>
-        <div class="team-card__body">
-          <h3 class="team-card__name">Maria McDonald</h3>
-          <p class="team-card__role">Practice Manager</p>
-          <p class="team-card__bio">Maria has worked as an administrator in the private healthcare sector for over 18 years.
-          <p class="team-card__bio">She is married with two children and one grandchild.</p>
-          <p class="team-card__bio">Maria has a big focus on keeping fit. She enjoys her bush walks with her dog and doing pilates. She also enjoys spending time with her family and friends. </p>
-          <p class="team-card__bio">Maria has a warm, bubbly personality and loves meeting people and helping them through their medical journey.</p>
+    <div class="grid grid--3">
+      <article class="card">
+        <div class="card__body">
+          <h2 class="card__title">
+            <a href="{{ "about/meet-our-team/" | relURL }}">Meet our Team</a>
+          </h2>
+          <p class="card__text">Get to know our experienced surgeons, specialists and support staff dedicated to your care.</p>
+          <a href="{{ "about/meet-our-team/" | relURL }}" class="card__link">View the team &rarr;</a>
         </div>
       </article>
-
-      {{/* Katie Lambert */}}
-      <article class="team-card">
-        <div class="team-card__image-wrap">
-          <div class="team-card__image-wrap">
-          <img src="{{ "images/team/katie-lambert.jpeg" | relURL }}" alt="Katie Lambert, Our Dietitian at Auckland Surgical Associates" class="team-card__image" loading="lazy">
-        </div>
-        </div>
-        <div class="team-card__body">
-          <h3 class="team-card__name">Katie Lambert</h3>
-          <p class="team-card__role mb-0">Dietitian
-            <br/><small class="team-card__credentials">Registered Dietitian, BSc, MHSc (Nutrition and Dietetics)</small>
-          </p>
-          <p class="team-card__bio">Katie is a bariatric dietitian with over 12 years' experience specialising in bariatric and metabolic nutrition, and more than 25 years as a dietitian overall. She trained in Scotland, graduating from The Robert Gordon University, Aberdeen in 1997, and has worked in New Zealand and internationally.</p>
-          <p class="team-card__bio">Katie has worked in bariatric and obesity care since 2008, including roles at Counties Manukau DHB, an Auckland bariatric clinic, and Allevia Hospital (formerly MercyAscot) since 2015. She supports people before and after weight loss surgery, as well as those using weight loss medications, providing personalised, evidence-based nutrition advice tailored to each person's needs.</p>
-          <p class="team-card__bio">With experience across public health, private practice, and multidisciplinary bariatric teams, Katie brings a warm, compassionate approach, helping people navigate the physical, emotional, and social changes that accompany weight loss.</p>
-          <p class="team-card__bio">Katie is a member of Dietitians New Zealand (DNZ), ANZMOSS, and the International Federation for the Surgery of Obesity and Metabolic Disorders (IFSO), and serves on the IFSO IHT Education & Training Committee. She has previously served on the ANZMOSS board and convened the Dietitians NZ Bariatric Special Interest Group. </p>
+      <article class="card">
+        <div class="card__body">
+          <h2 class="card__title">
+            <a href="{{ "about/history/" | relURL }}">The History of Surgical Weight Solutions</a>
+          </h2>
+          <p class="card__text">Discover our journey providing high quality bariatric services since 2000.</p>
+          <a href="{{ "about/history/" | relURL }}" class="card__link">Read our history &rarr;</a>
         </div>
       </article>
-
-      {{/* Amanda Stewart */}}
-      <article class="team-card">
-        <div class="team-card__image-wrap">
-          <img src="{{ "images/team/amanda-stewart.webp" | relURL }}" alt="Amanda Stewart, Psychologist at Auckland Surgical Associates" class="team-card__image" loading="lazy">
-        </div>
-        <div class="team-card__body">
-          <h3 class="team-card__name">Amanda Stewart</h3>
-          <p class="team-card__role">Psychologist</p>
-          <p class="team-card__bio">Mandie began her career in 2001, joining the Royal New Zealand Navy, qualifying as a medic. She served across the South Pacific and was deployed to the Middle East, participating in peacekeeping exercises and supporting individuals in extreme circumstances. During this time, she developed a strong interest in the connection between psychological and physical health, which led her to pursue a career in psychology.</p>
-          <p class="team-card__bio">Mandie holds a Master of Health Science in Psychology with Honours (MHSc) from AUT University and a Postgraduate Diploma in Counselling Psychology. With over a decade of experience, she is now a senior Counselling Psychologist.</p>
-          <p class="team-card__bio">She remains actively engaged with the military, collaborating with the medical team to provide psychological rehabilitation. She is also involved with Te Kiwi Māia, a charitable trust dedicated to supporting frontline workers, and is contracted to Optimally, where she focuses on psychological well-being in the workplace.</p>
-          <p class="team-card__bio">Mandie’s areas of expertise include burnout, stress, trauma, identity work, body image and confidence, anxiety-related disorders, and mood disorders. She also helps clients strengthen interpersonal skills, enhance life direction, and navigate challenges such as imposter syndrome.</p>
-          <p class="team-card__bio">She is trained in Cognitive Behavioural Therapy (CBT), Mindful Self-Compassion (MSC), and Acceptance and Commitment Therapy (ACT), tailoring her approach to each client’s unique needs. With deep empathy and a genuine curiosity about people’s life stories, Mandie is committed to creating a warm, supportive space where individuals feel safe, understood, and empowered to seek the help they need for their well-being.</p>
-          <p class="team-card__bio">In her free time, Mandie loves spending time at the beach with her family—paddleboarding, fishing, and soaking up the sun. When she’s at home, you’ll often find her playing guitar or getting creative with a paintbrush in hand.</p>
-          <p class="team-card__bio">She looks forward to connecting with you and supporting you on your journey to well-being.</p>
-        </div>
-      </article>
-
-      {{/* Maddison Dennis */}}
-      <article class="team-card">
-        <div class="team-card__image-wrap">
-          <img src="{{ "images/team/maddison-dennis.jpg" | relURL }}" alt="Maddison Dennis, Clinical Nurse Specialist at Auckland Surgical Associates" class="team-card__image" loading="lazy">
-        </div>
-        <div class="team-card__body">
-          <h3 class="team-card__name">Maddison Dennis</h3>
-          <p class="team-card__role">Clinical Nurse Specialist
-            <br/><small class="team-card__credentials">Postgraduate Certificate in Advanced Nursing Practice</small>
-          </p>
-          
-          <p class="team-card__bio">Maddison Dennis is our Clinical Nurse Specialist and all-around healthcare superstar. Maddison is a highly skilled nurse with extensive experience across both public and private healthcare settings. She completed her nursing training at Auckland University of Technology and holds a Postgraduate Certificate in Advanced Nursing Practice.</p>
-          <p class="team-card__bio">Her nursing career spans a diverse range of specialties, including renal medicine, acute stroke care, general medicine, women’s health and general surgery. She brings a wealth of clinical knowledge, compassion, and a calm, reassuring presence to every patient interaction.</p>
-          <p class="team-card__bio">Maddison has seen the profound, life-changing impact bariatric surgery can have and feels privileged to walk alongside patients on their journey to better health. Her warmth, expertise and sense of humour make her an integral part of our team.</p>
-          <p class="team-card__bio">Outside the clinic, Maddison is a creative at soul — often found at her pottery wheel crafting her signature ceramic highland cows (yes, really!). She’s also a devoted dog lover with a soft spot for strays — so don’t be surprised if your four-legged visitor leaves with a new best friend.</p>
-        </div>
-      </article>
-
     </div>
-
-  </div>
-</section>
-
-
-<section class="section section--white expertise-solutions">
-  <div class="container">
-    <h2 class="section-header__title">The History of Surgical Weight Solutions</h2>
-    <p class="team-member__credentials">Words from Mr Michael Booth (Founding Surgeon).</p>
-
-    <p>Surgical Weight Solutions was established in 2000 with the sole purpose of providing a high quality bariatric service incorporating dietitian and psychological support. </p>
-    <p>This was based around the understanding that Obesity is a multifactorial disease and although treatments are continuing to change, there is an ongoing need to provide a wrap-around service to maximise the chances of good patient outcomes. This is why we have a 5 year follow-up plan for our patients dnd encourage them to take part in our support groups during this period.</p>
-    <p>Over the years our Unit was the first to transition from open gastric bypass surgery to laparoscopic approach. The next frontier may be robotic assisted bariatric surgery with the aim being to provide high quality and safer surgery. Mr Suheelan Kula performed the first successful total robotic esophagectomy and gastrectomy  in the Country. </p>
-    <p>The rise of powerful weight loss medications has meant that some can avoid surgery or use these medications to help them on their weight loss journey whether at the beginning, middle or end. The nature of ongoing treatment recognises obesity as a chronic disease which generally implies treatment for life of some sort.</p>
-    <p>Over the years our unit has led the way with gastric bypass. The addition of silastic rings to reduce weight regain and performing one anastomosis gastric bypass on patients whom we have now published 15 year follow-up data on. This experience has helped us tailor our surgery to the patient and their needs. </p>
-    <p>I had the privilege of training many registrars and Fellows virtually all of whom have busy bariatric practices.</p>
-    <p>The techniques and perioperative management of our patients will continue to evolve and improve however Our uncompromising and continued drive to maintain the highest standards continues today. </p>
-    <p>I know I am leaving SWS in excellent hands with Mr Suheelan Kula and am delighted that he is continuing to focus on quality care for our patients. I wish him all the very best for the future.</p>
   </div>
 </section>
 

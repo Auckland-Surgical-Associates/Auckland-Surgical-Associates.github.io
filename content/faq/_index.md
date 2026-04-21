@@ -27,9 +27,23 @@ Yes, we would be delighted to help with this. We have a multidisciplinary team a
 
 ## Costs & Payment
 
+### How much does Bariatric surgery cost?
+
+| Procedure | Price |
+|---|---|
+| Fobi Pouch Gastric Bypass | $21,500 ($22,500 with Silastic Ring) |
+| Gastric Sleeve | $17,500 |
+| Mini Gastric Bypass | $18,900 ($22,500 with Silastic Ring) |
+| Gastric Band | Price on application |
+| SADI-S | Price on application |
+| BPD/DS | Price on application |
+
+[Read more about each proceedure here](/expertise/obesity-treatment/surgical-weight-loss).
+
 ### How much is a consultation?
 
 Consultations vary between $200 and $385, depending on which specialist you are seeing and for how long.
+
 
 ### When do I have to pay?
 
@@ -39,9 +53,9 @@ Payment occurs on consultation day, with surgery payments required minimum 7 day
 
 Accepted methods include EFTPOS, bank transfers, and credit cards. Credit cards aren't accepted for surgery, and American Express isn't accepted at all.
 
-### What is included in the surgery cost?
+### What is the follow up care after Bariatric surgery?
 
-Bariatric surgery includes a 5-year follow-up program featuring multiple dietitian and physician appointments, plus access to monthly support sessions.
+We offer long term and comprehensive follow up for our patients to ensure excellent outcomes. We offer regular follow up with our dietitian, surgeon and nurse up to 5 years after surgery, plus access to monthly support sessions.
 
 ### What are the other costs involved?
 
@@ -49,13 +63,13 @@ Patients cover prescription medications, multivitamins, and Optifast drinks post
 
 ### Are you Affiliated with Southern Cross?
 
-Mr Michael Booth is an Affiliated Provider with Southern Cross.
+Dr Suheelan Kulasegaran and Dr Michael Booth are Affiliated Provides with Southern Cross
 
 ## Surgery
 
 ### Where will my surgery be?
 
-Mr Booth operates privately at Southern Cross North Harbour in Auckland.
+Dr Suheelan Kulasegaran and Dr Michael Booth operate privately at Southern Cross North Harbour and Allevia Auckland City. 
 
 ### What preparation do I have to do for surgery?
 

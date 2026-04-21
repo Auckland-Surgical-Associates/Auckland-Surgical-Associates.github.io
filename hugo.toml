@@ -84,9 +84,20 @@ theme = 'asa'
     url = '/symptoms/'
     weight = 2
   [[menu.main]]
+    identifier = 'about'
     name = 'About'
     url = '/about/'
     weight = 3
+  [[menu.main]]
+    name = 'Meet our Team'
+    url = '/about/meet-our-team/'
+    parent = 'about'
+    weight = 1
+  [[menu.main]]
+    name = 'The History of Surgical Weight Solutions'
+    url = '/about/history/'
+    parent = 'about'
+    weight = 2
   [[menu.main]]
     name = 'FAQs'
     url = '/faq/'
