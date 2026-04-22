@@ -31,9 +31,9 @@ Yes, we would be delighted to help with this. We have a multidisciplinary team a
 
 | Procedure | Price |
 |---|---|
-| Fobi Pouch Gastric Bypass | $21,500 ($22,500 with Silastic Ring) |
+| Fobi Pouch Gastric Bypass | $21,500 ($19,900 with Silastic Ring) |
 | Gastric Sleeve | $17,500 |
-| Mini Gastric Bypass | $18,900 ($22,500 with Silastic Ring) |
+| Mini Gastric Bypass | $18,900 ($19,900 with Silastic Ring) |
 | Gastric Band | Price on application |
 | SADI-S | Price on application |
 | BPD/DS | Price on application |
@@ -42,7 +42,7 @@ Yes, we would be delighted to help with this. We have a multidisciplinary team a
 
 ### How much is a consultation?
 
-Consultations vary between $200 and $385, depending on which specialist you are seeing and for how long.
+Consultations vary between $189 and $379, depending on which specialist you are seeing and for how long.
 
 
 ### When do I have to pay?
