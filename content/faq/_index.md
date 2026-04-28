@@ -31,9 +31,9 @@ Yes, we would be delighted to help with this. We have a multidisciplinary team a
 
 | Procedure | Price |
 |---|---|
-| Fobi Pouch Gastric Bypass | $21,500 ($19,900 with Silastic Ring) |
+| Roux-en-Y Gastric Bypass | $21,500 ($22,500 with Silastic Ring) |
 | Gastric Sleeve | $17,500 |
-| Mini Gastric Bypass | $18,900 ($19,900 with Silastic Ring) |
+| One Anastomosis Gastric Bypass (Mini Gastric Bypass) | $18,900 ($19,900 with Silastic Ring) |
 | Gastric Band | Price on application |
 | SADI-S | Price on application |
 | BPD/DS | Price on application |
